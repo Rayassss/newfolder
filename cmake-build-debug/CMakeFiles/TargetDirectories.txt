@@ -1,0 +1,3 @@
+D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir
+D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/rebuild_cache.dir
