@@ -7,6 +7,37 @@ UART_HandleTypeDef UART1_Handler;
 unsigned char aRxBuffer[RXBUFFERSIZE];
 unsigned short UART_RX_STA = 0;
 unsigned char USART_RX_BUF[USART_REC_LEN];
+void MX_USART1_UART_Init(void)
+{
+    GPIO_InitTypeDef GPIO_Initure;
+    __HAL_RCC_GPIOA_CLK_ENABLE();
+    __HAL_RCC_USART1_CLK_ENABLE();
+    __HAL_RCC_AFIO_CLK_ENABLE();
+
+    GPIO_Initure.Pin = GPIO_PIN_9;
+    GPIO_Initure.Mode = GPIO_MODE_AF_PP;
+    GPIO_Initure.Pull = GPIO_PULLUP;
+    GPIO_Initure.Speed = GPIO_SPEED_HIGH;
+    HAL_GPIO_Init(GPIOA, &GPIO_Initure);
+
+    GPIO_Initure.Pin = GPIO_PIN_10;
+    GPIO_Initure.Mode = GPIO_MODE_AF_INPUT;
+    HAL_GPIO_Init(GPIOA, &GPIO_Initure);
+
+
+    HAL_NVIC_EnableIRQ(USART1_IRQn);
+    HAL_NVIC_SetPriority(USART1_IRQn, 3, 3);
+    UART1_Handler.Instance = USART1;
+    UART1_Handler.Init.BaudRate = 115200;
+    UART1_Handler.Init.WordLength = UART_WORDLENGTH_8B;
+    UART1_Handler.Init.Mode = UART_MODE_TX_RX;
+    UART1_Handler.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+    UART1_Handler.Init.Parity = UART_PARITY_NONE;
+    UART1_Handler.Init.StopBits = UART_STOPBITS_1;
+    UART1_Handler.Init.OverSampling = UART_OVERSAMPLING_16;
+    HAL_UART_Init(&UART1_Handler);
+    HAL_UART_Receive_IT(&UART1_Handler, (unsigned char *) aRxBuffer, RXBUFFERSIZE);
+}
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
   if(huart->Instance==USART1)
@@ -32,4 +63,25 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 
 
   }
+}
+void Context_in_while_for_uart1(void)
+{
+    unsigned char len = 0;
+    unsigned short times = 0;
+    Ledreset_2;
+    if(UART_RX_STA & 0x8000)
+    {
+        len = UART_RX_STA & 0x3fff;
+        printf("\r\n您发送的消息为:\r\n");
+        HAL_UART_Transmit(&UART1_Handler,(unsigned char *)USART_RX_BUF,len,1000);
+        while (__HAL_UART_GET_FLAG(&UART1_Handler,UART_FLAG_TC) != SET);
+        printf("\r\n\r\n");
+        UART_RX_STA = 0;
+    }
+    else
+    {
+        times++;
+        if(times%200==0)printf("请输入数据,以回车键结束\r\n");
+        HAL_Delay(10);
+    }
 }

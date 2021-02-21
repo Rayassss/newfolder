@@ -110,6 +110,7 @@ CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_wwdg.h
+ ../Hardware/Led.h
  ../Hardware/uart.h
  D:/Desktop/newfolder/Core/Src/stm32f1xx_it.c
 CMakeFiles/newfolder.elf.dir/Core/Src/syscalls.c.obj
@@ -776,5 +777,6 @@ CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_wwdg.h
+ D:/Desktop/newfolder/Hardware/Led.h
  D:/Desktop/newfolder/Hardware/uart.c
  D:/Desktop/newfolder/Hardware/uart.h

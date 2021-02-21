@@ -109,6 +109,7 @@ CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj: ../Drivers/STM32F1xx_H
 CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_wwdg.h
+CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj: ../Hardware/Led.h
 CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj: ../Hardware/uart.h
 CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj: ../Core/Src/stm32f1xx_it.c
 
@@ -775,6 +776,7 @@ CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj: ../Drivers/STM32F1xx_HAL_Drive
 CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_wwdg.h
+CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj: ../Hardware/Led.h
 CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj: ../Hardware/uart.c
 CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj: ../Hardware/uart.h
 
