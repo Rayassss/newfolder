@@ -21,7 +21,6 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "stm32f1xx_it.h"
-#include "uart.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 /* USER CODE END Includes */
@@ -233,22 +232,28 @@ void DMA1_Channel5_IRQHandler(void)
   */
 void USART1_IRQHandler(void)
 {
-  unsigned long timeout = 0;
-    HAL_UART_IRQHandler(&UART1_Handler);
-    timeout = 0;
-    while(HAL_UART_GetState(&UART1_Handler) != HAL_UART_STATE_READY)
-    {
-        timeout++;
-        if(timeout>HAL_MAX_DELAY) break;
-    }
-    timeout = 0;
-    while(HAL_UART_Receive_IT(&UART1_Handler,(unsigned char*)aRxBuffer,RXBUFFERSIZE) != HAL_OK)
-    {
-        timeout++;
-        if(timeout>HAL_MAX_DELAY) break;
-    }
+  /* USER CODE BEGIN USART1_IRQn 0 */
+
+  /* USER CODE END USART1_IRQn 0 */
+  HAL_UART_IRQHandler(&huart1);
+  /* USER CODE BEGIN USART1_IRQn 1 */
 
   /* USER CODE END USART1_IRQn 1 */
+}
+
+/**
+  * @brief This function handles EXTI line[15:10] interrupts.
+  */
+void EXTI15_10_IRQHandler(void)
+{
+  /* USER CODE BEGIN EXTI15_10_IRQn 0 */
+
+  /* USER CODE END EXTI15_10_IRQn 0 */
+  HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_14);
+  HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_15);
+  /* USER CODE BEGIN EXTI15_10_IRQn 1 */
+
+  /* USER CODE END EXTI15_10_IRQn 1 */
 }
 
 /* USER CODE BEGIN 1 */

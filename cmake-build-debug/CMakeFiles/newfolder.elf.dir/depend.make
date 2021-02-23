@@ -3,10 +3,8 @@
 
 CMakeFiles/newfolder.elf.dir/startup/startup_stm32f103xe.s.obj: ../startup/startup_stm32f103xe.s
 
-CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj: ../Core/Inc/gpio.h
 CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj: ../Core/Inc/main.h
 CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj: ../Core/Inc/stm32f1xx_hal_conf.h
-CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj: ../Core/Inc/stm32f1xx_it.h
 CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
 CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
 CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
@@ -37,9 +35,7 @@ CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj: ../Drivers/STM32F1xx_HAL_Drive
 CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_wwdg.h
-CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj: ../Hardware/Key.h
 CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj: ../Hardware/Led.h
-CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj: ../Hardware/uart.h
 CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj: ../Core/Src/main.c
 
 CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: ../Core/Inc/main.h
@@ -74,6 +70,7 @@ CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: ../Drivers/STM32F
 CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_wwdg.h
+CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: ../Hardware/Led.h
 CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: ../Core/Src/stm32f1xx_hal_msp.c
 
 CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj: ../Core/Inc/main.h
@@ -110,7 +107,6 @@ CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj: ../Drivers/STM32F1xx_H
 CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_wwdg.h
 CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj: ../Hardware/Led.h
-CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj: ../Hardware/uart.h
 CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj: ../Core/Src/stm32f1xx_it.c
 
 CMakeFiles/newfolder.elf.dir/Core/Src/syscalls.c.obj: ../Core/Src/syscalls.c
@@ -675,6 +671,41 @@ CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_wwdg.h
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.c
+
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Core/Inc/stm32f1xx_hal_conf.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/CMSIS/Include/cmsis_armcc.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/CMSIS/Include/cmsis_armclang.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/CMSIS/Include/cmsis_compiler.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/CMSIS/Include/cmsis_gcc.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/CMSIS/Include/cmsis_iccarm.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/CMSIS/Include/cmsis_version.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/CMSIS/Include/core_cm3.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/CMSIS/Include/mpu_armv7.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_wwdg.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Hardware/Exti.c
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Hardware/Exti.h
+CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Hardware/Led.h
 
 CMakeFiles/newfolder.elf.dir/Hardware/Key.c.obj: ../Core/Inc/stm32f1xx_hal_conf.h
 CMakeFiles/newfolder.elf.dir/Hardware/Key.c.obj: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h

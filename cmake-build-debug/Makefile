@@ -709,6 +709,33 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.c.s
 
+Hardware/Exti.obj: Hardware/Exti.c.obj
+
+.PHONY : Hardware/Exti.obj
+
+# target to build an object file
+Hardware/Exti.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj
+.PHONY : Hardware/Exti.c.obj
+
+Hardware/Exti.i: Hardware/Exti.c.i
+
+.PHONY : Hardware/Exti.i
+
+# target to preprocess a source file
+Hardware/Exti.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.i
+.PHONY : Hardware/Exti.c.i
+
+Hardware/Exti.s: Hardware/Exti.c.s
+
+.PHONY : Hardware/Exti.s
+
+# target to generate assembly for a file
+Hardware/Exti.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.s
+.PHONY : Hardware/Exti.c.s
+
 Hardware/Key.obj: Hardware/Key.c.obj
 
 .PHONY : Hardware/Key.obj
@@ -871,6 +898,9 @@ help:
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.s
+	@echo ... Hardware/Exti.obj
+	@echo ... Hardware/Exti.i
+	@echo ... Hardware/Exti.s
 	@echo ... Hardware/Key.obj
 	@echo ... Hardware/Key.i
 	@echo ... Hardware/Key.s

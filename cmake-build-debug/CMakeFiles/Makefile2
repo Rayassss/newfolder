@@ -93,12 +93,12 @@ clean: CMakeFiles/newfolder.elf.dir/clean
 CMakeFiles/newfolder.elf.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26 "Built target newfolder.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27 "Built target newfolder.elf"
 .PHONY : CMakeFiles/newfolder.elf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/newfolder.elf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Desktop\newfolder\cmake-build-debug\CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Desktop\newfolder\cmake-build-debug\CMakeFiles 27
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/newfolder.elf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Desktop\newfolder\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/newfolder.elf.dir/rule
