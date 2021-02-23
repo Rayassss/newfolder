@@ -1875,21 +1875,21 @@ LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-non
 LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a
 LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp\libgcc.a
 
-.debug_info     0x00000000     0x93ac
- .debug_info    0x00000000     0x112b CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj
- .debug_info    0x0000112b     0x110a CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_info    0x00002235      0x782 CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_info    0x000029b7      0x2c9 CMakeFiles/newfolder.elf.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_info    0x00002c80      0x897 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_info    0x00003517      0xeac CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_info    0x000043c3      0x932 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_info    0x00004cf5      0x75b CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_info    0x00005450      0xaab CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_info    0x00005efb     0x1919 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .debug_info    0x00007814      0x309 CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj
- .debug_info    0x00007b1d      0x3a6 CMakeFiles/newfolder.elf.dir/Hardware/Led.c.obj
- .debug_info    0x00007ec3     0x14c7 CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj
- .debug_info    0x0000938a       0x22 CMakeFiles/newfolder.elf.dir/startup/startup_stm32f103xe.s.obj
+.debug_info     0x00000000     0x93a8
+ .debug_info    0x00000000     0x1129 CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj
+ .debug_info    0x00001129     0x110a CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_info    0x00002233      0x782 CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_info    0x000029b5      0x2c9 CMakeFiles/newfolder.elf.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_info    0x00002c7e      0x897 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_info    0x00003515      0xeac CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_info    0x000043c1      0x932 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_info    0x00004cf3      0x75b CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_info    0x0000544e      0xaab CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_info    0x00005ef9     0x1919 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ .debug_info    0x00007812      0x307 CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj
+ .debug_info    0x00007b19      0x3a6 CMakeFiles/newfolder.elf.dir/Hardware/Led.c.obj
+ .debug_info    0x00007ebf     0x14c7 CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj
+ .debug_info    0x00009386       0x22 CMakeFiles/newfolder.elf.dir/startup/startup_stm32f103xe.s.obj
 
 .debug_abbrev   0x00000000     0x1c89
  .debug_abbrev  0x00000000      0x25c CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj
@@ -1953,21 +1953,21 @@ LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp\lib
  .debug_ranges  0x000005d0       0x20 CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj
  .debug_ranges  0x000005f0       0x20 CMakeFiles/newfolder.elf.dir/startup/startup_stm32f103xe.s.obj
 
-.debug_line     0x00000000     0x5ef2
- .debug_line    0x00000000      0x3ee CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj
- .debug_line    0x000003ee      0x4bd CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_line    0x000008ab      0x374 CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_line    0x00000c1f      0x29a CMakeFiles/newfolder.elf.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_line    0x00000eb9      0x52a CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_line    0x000013e3      0x680 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_line    0x00001a63      0xd37 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_line    0x0000279a      0x63d CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_line    0x00002dd7      0xc47 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_line    0x00003a1e     0x1bec CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .debug_line    0x0000560a      0x1fe CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj
- .debug_line    0x00005808      0x205 CMakeFiles/newfolder.elf.dir/Hardware/Led.c.obj
- .debug_line    0x00005a0d      0x456 CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj
- .debug_line    0x00005e63       0x8f CMakeFiles/newfolder.elf.dir/startup/startup_stm32f103xe.s.obj
+.debug_line     0x00000000     0x5ef0
+ .debug_line    0x00000000      0x3ec CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj
+ .debug_line    0x000003ec      0x4bd CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_line    0x000008a9      0x374 CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_line    0x00000c1d      0x29a CMakeFiles/newfolder.elf.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_line    0x00000eb7      0x52a CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_line    0x000013e1      0x680 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_line    0x00001a61      0xd37 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_line    0x00002798      0x63d CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_line    0x00002dd5      0xc47 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_line    0x00003a1c     0x1bec CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ .debug_line    0x00005608      0x1fe CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj
+ .debug_line    0x00005806      0x205 CMakeFiles/newfolder.elf.dir/Hardware/Led.c.obj
+ .debug_line    0x00005a0b      0x456 CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj
+ .debug_line    0x00005e61       0x8f CMakeFiles/newfolder.elf.dir/startup/startup_stm32f103xe.s.obj
 
 .debug_str      0x00000000     0x27e0
  .debug_str     0x00000000      0xf35 CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj
