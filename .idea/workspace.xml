@@ -9,12 +9,24 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4799f57d-90d4-42e1-a72a-5529b03787ec" name="Default Changelist" comment="make exti1 pulldown status to enable led">
+    <list default="true" id="4799f57d-90d4-42e1-a72a-5529b03787ec" name="Default Changelist" comment="delete some explain words">
+      <change afterPath="$PROJECT_DIR$/Hardware/iwg.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hardware/iwg.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/Exti.c" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/Exti.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardware/Key.c" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/Key.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardware/Key.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/Key.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/newfolder.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/newfolder.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/newfolder.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/newfolder.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/newfolder.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/newfolder.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/newfolder.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/newfolder.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/newfolder.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/newfolder.map" afterDir="false" />
@@ -60,9 +72,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
   </component>
   <component name="RunManager" selected="OpenOCD Download &amp; Run.OCD newfolder">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
     <configuration name="newfolder.elf" type="CMakeRunConfiguration" factoryName="Application" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="newfolder" TARGET_NAME="newfolder.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="newfolder" RUN_TARGET_NAME="newfolder.elf">
@@ -96,7 +108,8 @@
       <workItem from="1613717188137" duration="21245000" />
       <workItem from="1613876881831" duration="3576000" />
       <workItem from="1613957550795" duration="5264000" />
-      <workItem from="1614047169880" duration="3516000" />
+      <workItem from="1614047169880" duration="3729000" />
+      <workItem from="1614222476140" duration="7445000" />
     </task>
     <task id="LOCAL-00001" summary="include uart1 key led">
       <created>1613878259000</created>
@@ -126,7 +139,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614050046923</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="delete some explain words">
+      <created>1614050822344</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614050822344</updated>
+    </task>
+    <task id="LOCAL-00006" summary="delete some explain words">
+      <created>1614050831993</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614050831993</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +175,8 @@
     <MESSAGE value="include uart1 key led" />
     <MESSAGE value="sort uart1 function to uart.c" />
     <MESSAGE value="make exti1 pulldown status to enable led" />
-    <option name="LAST_COMMIT_MESSAGE" value="make exti1 pulldown status to enable led" />
+    <MESSAGE value="delete some explain words" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete some explain words" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

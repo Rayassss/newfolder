@@ -15,12 +15,16 @@ void Key_init(void) {
     HAL_GPIO_Init(GPIOD, &GPIO_Initure);
 
 }
-unsigned char Key_Scan(void) {
+int Key_Scan(void) {
+    HAL_Delay(20);
     if ((Key1 == 0) || (Key2 == 0)) {
+        HAL_Delay(20);
         if (Key1 == 0) {
             return Key1_rst;
-        } else if (Key2 == 0) {
+        }
+        if (Key2 == 0) {
             return Key2_rst;
-        } else return 0;
+        }
+
     }
 }

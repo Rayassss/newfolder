@@ -19,28 +19,6 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-/* Private includes ----------------------------------------------------------*/
-/* USER CODE BEGIN Includes */
-
-/* USER CODE END Includes */
-
-/* Private typedef -----------------------------------------------------------*/
-/* USER CODE BEGIN PTD */
-
-/* USER CODE END PTD */
-
-/* Private define ------------------------------------------------------------*/
-/* USER CODE BEGIN PD */
-/* USER CODE END PD */
-
-/* Private macro -------------------------------------------------------------*/
-/* USER CODE BEGIN PM */
-
-/* USER CODE END PM */
-
-/* Private variables ---------------------------------------------------------*/
-IWDG_HandleTypeDef hiwdg;
-
 TIM_HandleTypeDef htim2;
 
 UART_HandleTypeDef huart1;
@@ -49,27 +27,12 @@ DMA_HandleTypeDef hdma_usart1_rx;
 
 WWDG_HandleTypeDef hwwdg;
 
-/* USER CODE BEGIN PV */
-
-/* USER CODE END PV */
-
-/* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
-/*static void MX_DMA_Init(void);
-static void MX_IWDG_Init(void);
-static void MX_TIM2_Init(void);
-static void MX_USART1_UART_Init(void);
-static void MX_WWDG_Init(void);*/
-/* USER CODE BEGIN PFP */
-
-/* USER CODE END PFP */
-
-/* Private user code ---------------------------------------------------------*/
-/* USER CODE BEGIN 0 */
-
-/* USER CODE END 0 */
-
+//static void MX_DMA_Init(void);
+//static void MX_TIM2_Init(void);
+//static void MX_USART1_UART_Init(void);
+//static void MX_WWDG_Init(void);
 /**
   * @brief  The application entry point.
   * @retval int
@@ -78,19 +41,22 @@ int main(void)
 {
   HAL_Init();
   SystemClock_Config();
-  MX_GPIO_Init();
+    HAL_Delay(5000);
+//  MX_GPIO_Init();
   Led_init();
-/*  MX_DMA_Init();
+  Key_init();
+//  MX_DMA_Init();
   MX_IWDG_Init();
-  MX_TIM2_Init();
-  MX_USART1_UART_Init();
-  MX_WWDG_Init();*/
-  while (1)
+  Ledreset_1;
+//  MX_TIM2_Init();
+//  MX_USART1_UART_Init();
+//  MX_WWDG_Init();
+  while(1)
   {
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
+      if(Key_Scan() == 1)
+          IWDG_Feed();
   }
+
 }
 
 /**
@@ -130,23 +96,6 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-}
-
-/**
-  * @brief IWDG Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_IWDG_Init(void)
-{
-  hiwdg.Instance = IWDG;
-  hiwdg.Init.Prescaler = IWDG_PRESCALER_4;
-  hiwdg.Init.Reload = 4095;
-  if (HAL_IWDG_Init(&hiwdg) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
 }
 
 /**

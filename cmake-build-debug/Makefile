@@ -790,6 +790,33 @@ Hardware/Led.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/Led.c.s
 .PHONY : Hardware/Led.c.s
 
+Hardware/iwg.obj: Hardware/iwg.c.obj
+
+.PHONY : Hardware/iwg.obj
+
+# target to build an object file
+Hardware/iwg.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/iwg.c.obj
+.PHONY : Hardware/iwg.c.obj
+
+Hardware/iwg.i: Hardware/iwg.c.i
+
+.PHONY : Hardware/iwg.i
+
+# target to preprocess a source file
+Hardware/iwg.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/iwg.c.i
+.PHONY : Hardware/iwg.c.i
+
+Hardware/iwg.s: Hardware/iwg.c.s
+
+.PHONY : Hardware/iwg.s
+
+# target to generate assembly for a file
+Hardware/iwg.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/iwg.c.s
+.PHONY : Hardware/iwg.c.s
+
 Hardware/uart.obj: Hardware/uart.c.obj
 
 .PHONY : Hardware/uart.obj
@@ -907,6 +934,9 @@ help:
 	@echo ... Hardware/Led.obj
 	@echo ... Hardware/Led.i
 	@echo ... Hardware/Led.s
+	@echo ... Hardware/iwg.obj
+	@echo ... Hardware/iwg.i
+	@echo ... Hardware/iwg.s
 	@echo ... Hardware/uart.obj
 	@echo ... Hardware/uart.i
 	@echo ... Hardware/uart.s

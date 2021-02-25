@@ -318,6 +318,12 @@
 		<Unit filename="D:/Desktop/newfolder/Hardware/Led.h">
 			<Option target="newfolder.elf"/>
 		</Unit>
+		<Unit filename="D:/Desktop/newfolder/Hardware/iwg.c">
+			<Option target="newfolder.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/newfolder/Hardware/iwg.h">
+			<Option target="newfolder.elf"/>
+		</Unit>
 		<Unit filename="D:/Desktop/newfolder/Hardware/uart.c">
 			<Option target="newfolder.elf"/>
 		</Unit>

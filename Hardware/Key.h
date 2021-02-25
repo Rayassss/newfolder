@@ -10,5 +10,5 @@
 #define Key1_rst 1
 #define Key2_rst 2
 void Key_init(void);
-unsigned char Key_Scan(void);
+int Key_Scan(void);
 #endif //STM32F1_HARDWARE_KEY_H_
