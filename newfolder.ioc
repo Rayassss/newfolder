@@ -72,6 +72,7 @@ NVIC.SVCall_IRQn=true\:0\:0\:false\:false\:true\:false\:false
 NVIC.SysTick_IRQn=true\:0\:0\:false\:false\:true\:false\:true
 NVIC.USART1_IRQn=true\:0\:0\:false\:false\:true\:true\:true
 NVIC.UsageFault_IRQn=true\:0\:0\:false\:false\:true\:false\:false
+NVIC.WWDG_IRQn=true\:0\:0\:false\:false\:true\:true\:true
 OSC_IN.Mode=HSE-External-Oscillator
 OSC_IN.Signal=RCC_OSC_IN
 OSC_OUT.Mode=HSE-External-Oscillator

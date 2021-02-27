@@ -330,6 +330,12 @@
 		<Unit filename="D:/Desktop/newfolder/Hardware/uart.h">
 			<Option target="newfolder.elf"/>
 		</Unit>
+		<Unit filename="D:/Desktop/newfolder/Hardware/wwdg.c">
+			<Option target="newfolder.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/newfolder/Hardware/wwdg.h">
+			<Option target="newfolder.elf"/>
+		</Unit>
 		<Unit filename="D:/Desktop/newfolder/STM32F103VETx_FLASH.ld">
 			<Option target="newfolder.elf"/>
 		</Unit>

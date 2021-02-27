@@ -25,6 +25,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/newfolder.elf.dir/Hardware/Led.c.obj"
   "CMakeFiles/newfolder.elf.dir/Hardware/iwg.c.obj"
   "CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj"
+  "CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.obj"
   "CMakeFiles/newfolder.elf.dir/startup/startup_stm32f103xe.s.obj"
   "newfolder.elf"
   "newfolder.elf.manifest"

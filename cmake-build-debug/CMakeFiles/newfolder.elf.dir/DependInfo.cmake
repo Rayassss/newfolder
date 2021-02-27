@@ -51,6 +51,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "D:/Desktop/newfolder/Hardware/Led.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/Led.c.obj"
   "D:/Desktop/newfolder/Hardware/iwg.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/iwg.c.obj"
   "D:/Desktop/newfolder/Hardware/uart.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj"
+  "D:/Desktop/newfolder/Hardware/wwdg.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

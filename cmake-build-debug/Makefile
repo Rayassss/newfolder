@@ -844,6 +844,33 @@ Hardware/uart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/uart.c.s
 .PHONY : Hardware/uart.c.s
 
+Hardware/wwdg.obj: Hardware/wwdg.c.obj
+
+.PHONY : Hardware/wwdg.obj
+
+# target to build an object file
+Hardware/wwdg.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.obj
+.PHONY : Hardware/wwdg.c.obj
+
+Hardware/wwdg.i: Hardware/wwdg.c.i
+
+.PHONY : Hardware/wwdg.i
+
+# target to preprocess a source file
+Hardware/wwdg.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.i
+.PHONY : Hardware/wwdg.c.i
+
+Hardware/wwdg.s: Hardware/wwdg.c.s
+
+.PHONY : Hardware/wwdg.s
+
+# target to generate assembly for a file
+Hardware/wwdg.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.s
+.PHONY : Hardware/wwdg.c.s
+
 startup/startup_stm32f103xe.obj: startup/startup_stm32f103xe.s.obj
 
 .PHONY : startup/startup_stm32f103xe.obj
@@ -940,6 +967,9 @@ help:
 	@echo ... Hardware/uart.obj
 	@echo ... Hardware/uart.i
 	@echo ... Hardware/uart.s
+	@echo ... Hardware/wwdg.obj
+	@echo ... Hardware/wwdg.i
+	@echo ... Hardware/wwdg.s
 	@echo ... startup/startup_stm32f103xe.obj
 .PHONY : help
 
