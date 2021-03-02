@@ -17,10 +17,6 @@ void MX_WWDG_Init(void)
     WWDG_Handler.Init.EWIMode = WWDG_EWI_DISABLE;
     HAL_WWDG_Init(&WWDG_Handler);
 }
-void WWDG_IRQHandler(void)
-{
-    HAL_WWDG_IRQHandler(&WWDG_Handler);
-}
 void HAL_WWDG_EarlyWakeupCallback(WWDG_HandleTypeDef* hwwdg)
 {
     static int flag = 0;

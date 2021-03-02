@@ -1,10 +1,6 @@
 //
 // Created by 罗屺 on 2021/2/10.
 //
-
-#include "stm32f1xx_hal.h"
-#include "stm32f1xx_hal_gpio.h"
-#include "stm32f1xx_hal_rcc.h"
 #include "Led.h"
 void Led_init(void) {
     GPIO_InitTypeDef GPIO_Initure;

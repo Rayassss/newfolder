@@ -23,6 +23,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj"
   "CMakeFiles/newfolder.elf.dir/Hardware/Key.c.obj"
   "CMakeFiles/newfolder.elf.dir/Hardware/Led.c.obj"
+  "CMakeFiles/newfolder.elf.dir/Hardware/Timer2.c.obj"
   "CMakeFiles/newfolder.elf.dir/Hardware/iwg.c.obj"
   "CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj"
   "CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.obj"

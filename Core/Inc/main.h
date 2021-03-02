@@ -36,6 +36,7 @@ extern "C" {
 #include "Key.h"
 #include "iwg.h"
 #include "wwdg.h"
+#include "Timer2.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

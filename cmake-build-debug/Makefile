@@ -790,6 +790,33 @@ Hardware/Led.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/Led.c.s
 .PHONY : Hardware/Led.c.s
 
+Hardware/Timer2.obj: Hardware/Timer2.c.obj
+
+.PHONY : Hardware/Timer2.obj
+
+# target to build an object file
+Hardware/Timer2.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/Timer2.c.obj
+.PHONY : Hardware/Timer2.c.obj
+
+Hardware/Timer2.i: Hardware/Timer2.c.i
+
+.PHONY : Hardware/Timer2.i
+
+# target to preprocess a source file
+Hardware/Timer2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/Timer2.c.i
+.PHONY : Hardware/Timer2.c.i
+
+Hardware/Timer2.s: Hardware/Timer2.c.s
+
+.PHONY : Hardware/Timer2.s
+
+# target to generate assembly for a file
+Hardware/Timer2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/Timer2.c.s
+.PHONY : Hardware/Timer2.c.s
+
 Hardware/iwg.obj: Hardware/iwg.c.obj
 
 .PHONY : Hardware/iwg.obj
@@ -961,6 +988,9 @@ help:
 	@echo ... Hardware/Led.obj
 	@echo ... Hardware/Led.i
 	@echo ... Hardware/Led.s
+	@echo ... Hardware/Timer2.obj
+	@echo ... Hardware/Timer2.i
+	@echo ... Hardware/Timer2.s
 	@echo ... Hardware/iwg.obj
 	@echo ... Hardware/iwg.i
 	@echo ... Hardware/iwg.s

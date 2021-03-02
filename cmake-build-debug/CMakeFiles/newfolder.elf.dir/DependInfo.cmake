@@ -49,6 +49,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "D:/Desktop/newfolder/Hardware/Exti.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj"
   "D:/Desktop/newfolder/Hardware/Key.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/Key.c.obj"
   "D:/Desktop/newfolder/Hardware/Led.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/Led.c.obj"
+  "D:/Desktop/newfolder/Hardware/Timer2.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/Timer2.c.obj"
   "D:/Desktop/newfolder/Hardware/iwg.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/iwg.c.obj"
   "D:/Desktop/newfolder/Hardware/uart.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj"
   "D:/Desktop/newfolder/Hardware/wwdg.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.obj"
