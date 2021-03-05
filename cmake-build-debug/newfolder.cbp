@@ -201,6 +201,12 @@
 		<Unit filename="D:/Desktop/newfolder/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h">
 			<Option target="newfolder.elf"/>
 		</Unit>
+		<Unit filename="D:/Desktop/newfolder/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h">
+			<Option target="newfolder.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/newfolder/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h">
+			<Option target="newfolder.elf"/>
+		</Unit>
 		<Unit filename="D:/Desktop/newfolder/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h">
 			<Option target="newfolder.elf"/>
 		</Unit>
@@ -253,6 +259,12 @@
 			<Option target="newfolder.elf"/>
 		</Unit>
 		<Unit filename="D:/Desktop/newfolder/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c">
+			<Option target="newfolder.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/newfolder/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c">
+			<Option target="newfolder.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/newfolder/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c">
 			<Option target="newfolder.elf"/>
 		</Unit>
 		<Unit filename="D:/Desktop/newfolder/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c">
@@ -322,6 +334,12 @@
 			<Option target="newfolder.elf"/>
 		</Unit>
 		<Unit filename="D:/Desktop/newfolder/Hardware/Timer2.h">
+			<Option target="newfolder.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/newfolder/Hardware/adc1.c">
+			<Option target="newfolder.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/newfolder/Hardware/adc1.h">
 			<Option target="newfolder.elf"/>
 		</Unit>
 		<Unit filename="D:/Desktop/newfolder/Hardware/iwg.c">

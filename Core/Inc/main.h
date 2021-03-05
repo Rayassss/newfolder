@@ -37,6 +37,7 @@ extern "C" {
 #include "iwg.h"
 #include "wwdg.h"
 #include "Timer2.h"
+#include "adc1.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

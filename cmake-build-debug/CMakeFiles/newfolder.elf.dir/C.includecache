@@ -74,6 +74,8 @@ stm32f1xx_hal_hcd.h
 stm32f1xx_hal_mmc.h
 ../Core/Inc/stm32f1xx_hal_mmc.h
 
+../Core/Inc/stm32f1xx_it.h
+
 ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
 core_cm3.h
 ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/core_cm3.h
@@ -166,6 +168,16 @@ mpu_armv7.h
 stm32f1xx_hal_conf.h
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_conf.h
 
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h
+stm32f1xx_hal_def.h
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
+stm32f1xx_hal_adc_ex.h
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h
+
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h
+stm32f1xx_hal_def.h
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
+
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
 stm32f1xx_hal_def.h
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
@@ -256,15 +268,21 @@ D:/Desktop/newfolder/Hardware/stm32f1xx_hal_gpio.h
 stm32f1xx_hal_rcc.h
 D:/Desktop/newfolder/Hardware/stm32f1xx_hal_rcc.h
 
-D:/Desktop/newfolder/Hardware/Timer2.c
-Timer2.h
-D:/Desktop/newfolder/Hardware/Timer2.h
+D:/Desktop/newfolder/Hardware/uart.c
+uart.h
+D:/Desktop/newfolder/Hardware/uart.h
 
-D:/Desktop/newfolder/Hardware/Timer2.h
+D:/Desktop/newfolder/Hardware/uart.h
 stm32f1xx_hal.h
 D:/Desktop/newfolder/Hardware/stm32f1xx_hal.h
-stm32f1xx_hal_tim.h
-D:/Desktop/newfolder/Hardware/stm32f1xx_hal_tim.h
+stm32f1xx_hal_gpio.h
+D:/Desktop/newfolder/Hardware/stm32f1xx_hal_gpio.h
+stm32f1xx_hal_uart.h
+D:/Desktop/newfolder/Hardware/stm32f1xx_hal_uart.h
+stm32f1xx_it.h
+D:/Desktop/newfolder/Hardware/stm32f1xx_it.h
+stdio.h
+D:/Desktop/newfolder/Hardware/stdio.h
 Led.h
 D:/Desktop/newfolder/Hardware/Led.h
 

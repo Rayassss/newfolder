@@ -72,10 +72,8 @@ void Context_in_while_for_uart1(void)
     if(UART_RX_STA & 0x8000)
     {
         len = UART_RX_STA & 0x3fff;
-        printf("\r\n您发送的消息为:\r\n");
-        HAL_UART_Transmit(&UART1_Handler,(unsigned char *)USART_RX_BUF,len,1000);
+        HAL_UART_Transmit(&UART1_Handler,(unsigned char*)USART_RX_BUF,len,1000);
         while (__HAL_UART_GET_FLAG(&UART1_Handler,UART_FLAG_TC) != SET);
-        printf("\r\n\r\n");
         UART_RX_STA = 0;
     }
     else
