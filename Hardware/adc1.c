@@ -4,8 +4,7 @@
 
 #include "adc1.h"
 ADC_HandleTypeDef hadc1;
-void MX_ADC1_Init(void)
-{
+void MX_ADC1_Init(void) {
     GPIO_InitTypeDef GPIO_Initure;
 
     __HAL_RCC_ADC1_CLK_ENABLE();
@@ -14,7 +13,7 @@ void MX_ADC1_Init(void)
     GPIO_Initure.Pin = GPIO_PIN_0;
     GPIO_Initure.Mode = GPIO_MODE_ANALOG;
     GPIO_Initure.Pull = GPIO_NOPULL;
-    HAL_GPIO_Init(GPIOC,&GPIO_Initure);
+    HAL_GPIO_Init(GPIOC, &GPIO_Initure);
 
     hadc1.Instance = ADC1;
     hadc1.Init.ScanConvMode = ADC_SCAN_DISABLE;
@@ -27,25 +26,24 @@ void MX_ADC1_Init(void)
     HAL_ADCEx_Calibration_Start(&hadc1);
 
 }
-int ADC1_GET()
-{
+float ADC1_GET() {
+    float Voltage;
     ADC_ChannelConfTypeDef sConfig = {0};
     sConfig.Channel = ADC_CHANNEL_10;
     sConfig.Rank = ADC_REGULAR_RANK_1;
     sConfig.SamplingTime = ADC_SAMPLETIME_71CYCLES_5;
-    HAL_ADC_ConfigChannel(&hadc1,&sConfig);
+    HAL_ADC_ConfigChannel(&hadc1, &sConfig);
     HAL_ADC_Start(&hadc1);
-    HAL_ADC_PollForConversion(&hadc1,15);
-    return (int)HAL_ADC_GetValue(&hadc1);
+    HAL_ADC_PollForConversion(&hadc1, 15);
+    Voltage = (3.3 / 4096) * (HAL_ADC_GetValue(&hadc1));
+    return Voltage;
 }
-unsigned int Get_Adc_Average(unsigned int ch,unsigned short times)
-{
-    unsigned int temp_val=0;
+unsigned int Get_Adc_Average(unsigned int ch, unsigned short times) {
+    unsigned int temp_val = 0;
     unsigned short t;
-    for(t=0;t<times;t++)
-    {
-        temp_val+=ADC1_GET();
+    for (t = 0; t < times; t++) {
+        temp_val += ADC1_GET();
         HAL_Delay(5);
     }
-    return temp_val/times;
+    return temp_val / times;
 }

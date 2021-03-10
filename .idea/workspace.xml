@@ -9,22 +9,17 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4799f57d-90d4-42e1-a72a-5529b03787ec" name="Default Changelist" comment="add adc1 to project">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/saveactions_settings.xml" afterDir="false" />
+    <list default="true" id="4799f57d-90d4-42e1-a72a-5529b03787ec" name="Default Changelist" comment="add uartprint to print the argument in computer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/stm32f1xx_hal_msp.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32f1xx_hal_msp.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/uart.c" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/uart.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/uart.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/uart.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardware/adc1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/adc1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hardware/adc1.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/adc1.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/newfolder.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/newfolder.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/newfolder.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/newfolder.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/newfolder.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/newfolder.hex" afterDir="false" />
@@ -119,7 +114,7 @@
       <workItem from="1614598413087" duration="7000" />
       <workItem from="1614689908314" duration="5740000" />
       <workItem from="1614953172517" duration="5149000" />
-      <workItem from="1615124171094" duration="7833000" />
+      <workItem from="1615124171094" duration="9443000" />
     </task>
     <task id="LOCAL-00001" summary="include uart1 key led">
       <created>1613878259000</created>
@@ -191,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614960362901</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add uartprint to print the argument in computer">
+      <created>1615376626462</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1615376626462</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +221,8 @@
     <MESSAGE value="add wwdg" />
     <MESSAGE value="add tim2 500ms toggle led light" />
     <MESSAGE value="add adc1 to project" />
-    <option name="LAST_COMMIT_MESSAGE" value="add adc1 to project" />
+    <MESSAGE value="add uartprint to print the argument in computer" />
+    <option name="LAST_COMMIT_MESSAGE" value="add uartprint to print the argument in computer" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

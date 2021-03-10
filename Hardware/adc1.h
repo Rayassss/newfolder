@@ -9,5 +9,5 @@
 #include "stm32f1xx_hal_gpio.h"
 
 void MX_ADC1_Init(void);
-int ADC1_GET();
+float ADC1_GET();
 #endif //NEWFOLDER_HARDWARE_ADC1_H_

@@ -39,6 +39,7 @@ extern "C" {
 #include "Timer2.h"
 #include "adc1.h"
 #include "uart.h"
+#include "adc1.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
