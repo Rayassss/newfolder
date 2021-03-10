@@ -6,6 +6,7 @@ CMakeFiles/newfolder.elf.dir/startup/startup_stm32f103xe.s.obj
 CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj
  ../Core/Inc/main.h
  ../Core/Inc/stm32f1xx_hal_conf.h
+ ../Core/Inc/stm32f1xx_it.h
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
@@ -43,11 +44,13 @@ CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj
  ../Hardware/Timer2.h
  ../Hardware/adc1.h
  ../Hardware/iwg.h
+ ../Hardware/uart.h
  ../Hardware/wwdg.h
  D:/Desktop/newfolder/Core/Src/main.c
 CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
  ../Core/Inc/main.h
  ../Core/Inc/stm32f1xx_hal_conf.h
+ ../Core/Inc/stm32f1xx_it.h
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
@@ -85,6 +88,7 @@ CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
  ../Hardware/Timer2.h
  ../Hardware/adc1.h
  ../Hardware/iwg.h
+ ../Hardware/uart.h
  ../Hardware/wwdg.h
  D:/Desktop/newfolder/Core/Src/stm32f1xx_hal_msp.c
 CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj
@@ -128,6 +132,7 @@ CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj
  ../Hardware/Timer2.h
  ../Hardware/adc1.h
  ../Hardware/iwg.h
+ ../Hardware/uart.h
  ../Hardware/wwdg.h
  D:/Desktop/newfolder/Core/Src/stm32f1xx_it.c
 CMakeFiles/newfolder.elf.dir/Core/Src/syscalls.c.obj
