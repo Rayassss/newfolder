@@ -979,6 +979,87 @@ Hardware/wwdg.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.s
 .PHONY : Hardware/wwdg.c.s
 
+USMART/usmart.obj: USMART/usmart.c.obj
+
+.PHONY : USMART/usmart.obj
+
+# target to build an object file
+USMART/usmart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/USMART/usmart.c.obj
+.PHONY : USMART/usmart.c.obj
+
+USMART/usmart.i: USMART/usmart.c.i
+
+.PHONY : USMART/usmart.i
+
+# target to preprocess a source file
+USMART/usmart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/USMART/usmart.c.i
+.PHONY : USMART/usmart.c.i
+
+USMART/usmart.s: USMART/usmart.c.s
+
+.PHONY : USMART/usmart.s
+
+# target to generate assembly for a file
+USMART/usmart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/USMART/usmart.c.s
+.PHONY : USMART/usmart.c.s
+
+USMART/usmart_config.obj: USMART/usmart_config.c.obj
+
+.PHONY : USMART/usmart_config.obj
+
+# target to build an object file
+USMART/usmart_config.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/USMART/usmart_config.c.obj
+.PHONY : USMART/usmart_config.c.obj
+
+USMART/usmart_config.i: USMART/usmart_config.c.i
+
+.PHONY : USMART/usmart_config.i
+
+# target to preprocess a source file
+USMART/usmart_config.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/USMART/usmart_config.c.i
+.PHONY : USMART/usmart_config.c.i
+
+USMART/usmart_config.s: USMART/usmart_config.c.s
+
+.PHONY : USMART/usmart_config.s
+
+# target to generate assembly for a file
+USMART/usmart_config.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/USMART/usmart_config.c.s
+.PHONY : USMART/usmart_config.c.s
+
+USMART/usmart_str.obj: USMART/usmart_str.c.obj
+
+.PHONY : USMART/usmart_str.obj
+
+# target to build an object file
+USMART/usmart_str.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/USMART/usmart_str.c.obj
+.PHONY : USMART/usmart_str.c.obj
+
+USMART/usmart_str.i: USMART/usmart_str.c.i
+
+.PHONY : USMART/usmart_str.i
+
+# target to preprocess a source file
+USMART/usmart_str.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/USMART/usmart_str.c.i
+.PHONY : USMART/usmart_str.c.i
+
+USMART/usmart_str.s: USMART/usmart_str.c.s
+
+.PHONY : USMART/usmart_str.s
+
+# target to generate assembly for a file
+USMART/usmart_str.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/USMART/usmart_str.c.s
+.PHONY : USMART/usmart_str.c.s
+
 startup/startup_stm32f103xe.obj: startup/startup_stm32f103xe.s.obj
 
 .PHONY : startup/startup_stm32f103xe.obj
@@ -1090,6 +1171,15 @@ help:
 	@echo ... Hardware/wwdg.obj
 	@echo ... Hardware/wwdg.i
 	@echo ... Hardware/wwdg.s
+	@echo ... USMART/usmart.obj
+	@echo ... USMART/usmart.i
+	@echo ... USMART/usmart.s
+	@echo ... USMART/usmart_config.obj
+	@echo ... USMART/usmart_config.i
+	@echo ... USMART/usmart_config.s
+	@echo ... USMART/usmart_str.obj
+	@echo ... USMART/usmart_str.i
+	@echo ... USMART/usmart_str.s
 	@echo ... startup/startup_stm32f103xe.obj
 .PHONY : help
 

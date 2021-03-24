@@ -23,6 +23,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../Drivers/CMSIS/Device/ST/STM32F1xx/Include"
   "../Drivers/CMSIS/Include"
   "../Hardware"
+  "../USMART"
   )
 set(CMAKE_DEPENDS_CHECK_C
   "D:/Desktop/newfolder/Core/Src/main.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj"
@@ -56,6 +57,9 @@ set(CMAKE_DEPENDS_CHECK_C
   "D:/Desktop/newfolder/Hardware/iwg.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/iwg.c.obj"
   "D:/Desktop/newfolder/Hardware/uart.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj"
   "D:/Desktop/newfolder/Hardware/wwdg.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.obj"
+  "D:/Desktop/newfolder/USMART/usmart.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/USMART/usmart.c.obj"
+  "D:/Desktop/newfolder/USMART/usmart_config.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/USMART/usmart_config.c.obj"
+  "D:/Desktop/newfolder/USMART/usmart_str.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/USMART/usmart_str.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -73,6 +77,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../Drivers/CMSIS/Device/ST/STM32F1xx/Include"
   "../Drivers/CMSIS/Include"
   "../Hardware"
+  "../USMART"
   )
 
 # Targets to which this target links.

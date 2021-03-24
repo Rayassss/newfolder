@@ -32,6 +32,7 @@
 					<Add directory="D:/Desktop/newfolder/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
 					<Add directory="D:/Desktop/newfolder/Drivers/CMSIS/Include"/>
 					<Add directory="D:/Desktop/newfolder/Hardware"/>
+					<Add directory="D:/Desktop/newfolder/USMART"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1/arm-none-eabi"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1/backward"/>
@@ -61,6 +62,7 @@
 					<Add directory="D:/Desktop/newfolder/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
 					<Add directory="D:/Desktop/newfolder/Drivers/CMSIS/Include"/>
 					<Add directory="D:/Desktop/newfolder/Hardware"/>
+					<Add directory="D:/Desktop/newfolder/USMART"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1/arm-none-eabi"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1/backward"/>
@@ -361,6 +363,18 @@
 			<Option target="newfolder.elf"/>
 		</Unit>
 		<Unit filename="D:/Desktop/newfolder/STM32F103VETx_FLASH.ld">
+			<Option target="newfolder.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/newfolder/USMART/usmart.c">
+			<Option target="newfolder.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/newfolder/USMART/usmart.h">
+			<Option target="newfolder.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/newfolder/USMART/usmart_config.c">
+			<Option target="newfolder.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/newfolder/USMART/usmart_str.c">
 			<Option target="newfolder.elf"/>
 		</Unit>
 		<Unit filename="D:/Desktop/newfolder/startup/startup_stm32f103xe.s">

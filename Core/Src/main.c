@@ -30,7 +30,9 @@ int main(void) {
     uart.print = print_usart1;
 
     while (1) {
-        counter++;
+        if (counter == 0) {
+            Ledreset_2;
+        }
         uart.print("%f\r\n", ADC1_GET());
         HAL_Delay(500);
     }

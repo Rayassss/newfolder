@@ -9,18 +9,28 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4799f57d-90d4-42e1-a72a-5529b03787ec" name="Default Changelist" comment="add uartprint to print the argument in computer">
+    <list default="true" id="4799f57d-90d4-42e1-a72a-5529b03787ec" name="Default Changelist" comment="achieve adc1 function">
+      <change afterPath="$PROJECT_DIR$/USMART/usmart.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/USMART/usmart.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/USMART/usmart_config.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/USMART/usmart_str.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/print.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/adc1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/adc1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/adc1.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/adc1.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/newfolder.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/newfolder.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/newfolder.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/newfolder.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/newfolder.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/newfolder.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/newfolder.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/newfolder.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/newfolder.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/newfolder.map" afterDir="false" />
@@ -70,9 +80,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager" selected="OpenOCD Download &amp; Run.OCD newfolder">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
     <configuration name="newfolder.elf" type="CMakeRunConfiguration" factoryName="Application" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="newfolder" TARGET_NAME="newfolder.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="newfolder" RUN_TARGET_NAME="newfolder.elf">
@@ -114,7 +124,10 @@
       <workItem from="1614598413087" duration="7000" />
       <workItem from="1614689908314" duration="5740000" />
       <workItem from="1614953172517" duration="5149000" />
-      <workItem from="1615124171094" duration="9443000" />
+      <workItem from="1615124171094" duration="11739000" />
+      <workItem from="1615623611733" duration="690000" />
+      <workItem from="1615640737180" duration="204000" />
+      <workItem from="1616598573097" duration="640000" />
     </task>
     <task id="LOCAL-00001" summary="include uart1 key led">
       <created>1613878259000</created>
@@ -193,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615376626462</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="achieve adc1 function">
+      <created>1615378213109</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1615378213109</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,10 +242,15 @@
     <MESSAGE value="add tim2 500ms toggle led light" />
     <MESSAGE value="add adc1 to project" />
     <MESSAGE value="add uartprint to print the argument in computer" />
-    <option name="LAST_COMMIT_MESSAGE" value="add uartprint to print the argument in computer" />
+    <MESSAGE value="achieve adc1 function" />
+    <option name="LAST_COMMIT_MESSAGE" value="achieve adc1 function" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
+      <configuration name="com.jetbrains.cidr.embedded.openocd.conf.type">
+        <watch expression="counter++" language="ObjectiveC" />
+        <watch expression="counter" language="ObjectiveC" />
+      </configuration>
       <configuration name="CMakeRunConfiguration">
         <watch expression="UART_RX_STA" language="ObjectiveC" />
       </configuration>
