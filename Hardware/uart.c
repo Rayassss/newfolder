@@ -39,13 +39,13 @@ void MX_USART1_UART_Init(void) {
     UART1_Handler.Instance = USART1;
     UART1_Handler.Init.BaudRate = 115200;
     UART1_Handler.Init.WordLength = UART_WORDLENGTH_8B;
-    UART1_Handler.Init.Mode = UART_MODE_TX;
+    UART1_Handler.Init.Mode = UART_MODE_TX_RX;
     UART1_Handler.Init.HwFlowCtl = UART_HWCONTROL_NONE;
     UART1_Handler.Init.Parity = UART_PARITY_NONE;
     UART1_Handler.Init.StopBits = UART_STOPBITS_1;
     UART1_Handler.Init.OverSampling = UART_OVERSAMPLING_16;
     HAL_UART_Init(&UART1_Handler);
-//    HAL_UART_Receive_IT(&UART1_Handler, (unsigned char *) aRxBuffer, RXBUFFERSIZE);
+    HAL_UART_Receive_IT(&UART1_Handler, (unsigned char *) aRxBuffer, RXBUFFERSIZE);
 }
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
     if (huart->Instance == USART1) {

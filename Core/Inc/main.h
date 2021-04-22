@@ -40,6 +40,7 @@ extern "C" {
 #include "adc1.h"
 #include "uart.h"
 #include "adc1.h"
+#include "I2C1.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

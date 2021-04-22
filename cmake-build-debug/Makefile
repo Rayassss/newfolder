@@ -547,6 +547,33 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s
 
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.obj
+
+# target to build an object file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i
+
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.i
+
+# target to preprocess a source file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s
+
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.s
+
+# target to generate assembly for a file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s
+
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.c.obj
 
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.obj
@@ -789,6 +816,33 @@ Hardware/Exti.s: Hardware/Exti.c.s
 Hardware/Exti.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.s
 .PHONY : Hardware/Exti.c.s
+
+Hardware/I2C1.obj: Hardware/I2C1.c.obj
+
+.PHONY : Hardware/I2C1.obj
+
+# target to build an object file
+Hardware/I2C1.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/I2C1.c.obj
+.PHONY : Hardware/I2C1.c.obj
+
+Hardware/I2C1.i: Hardware/I2C1.c.i
+
+.PHONY : Hardware/I2C1.i
+
+# target to preprocess a source file
+Hardware/I2C1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/I2C1.c.i
+.PHONY : Hardware/I2C1.c.i
+
+Hardware/I2C1.s: Hardware/I2C1.c.s
+
+.PHONY : Hardware/I2C1.s
+
+# target to generate assembly for a file
+Hardware/I2C1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/I2C1.c.s
+.PHONY : Hardware/I2C1.c.s
 
 Hardware/Key.obj: Hardware/Key.c.obj
 
@@ -1123,6 +1177,9 @@ help:
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.s
+	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.obj
+	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.i
+	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.s
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.s
@@ -1150,6 +1207,9 @@ help:
 	@echo ... Hardware/Exti.obj
 	@echo ... Hardware/Exti.i
 	@echo ... Hardware/Exti.s
+	@echo ... Hardware/I2C1.obj
+	@echo ... Hardware/I2C1.i
+	@echo ... Hardware/I2C1.s
 	@echo ... Hardware/Key.obj
 	@echo ... Hardware/Key.i
 	@echo ... Hardware/Key.s

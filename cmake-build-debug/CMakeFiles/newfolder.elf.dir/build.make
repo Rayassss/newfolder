@@ -271,9 +271,22 @@ CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Desktop\newfolder\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c -o CMakeFiles\newfolder.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.s
 
+CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
+CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.obj   -c D:\Desktop\newfolder\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c
+
+CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Desktop\newfolder\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c > CMakeFiles\newfolder.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.i
+
+CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Desktop\newfolder\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c -o CMakeFiles\newfolder.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.s
+
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_iwdg.c.obj   -c D:\Desktop\newfolder\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_iwdg.c
 
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.c.i: cmake_force
@@ -286,7 +299,7 @@ CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg
 
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj   -c D:\Desktop\newfolder\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c
 
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i: cmake_force
@@ -299,7 +312,7 @@ CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.
 
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj   -c D:\Desktop\newfolder\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c
 
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i: cmake_force
@@ -312,7 +325,7 @@ CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.
 
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj   -c D:\Desktop\newfolder\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c
 
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i: cmake_force
@@ -325,7 +338,7 @@ CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_
 
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj   -c D:\Desktop\newfolder\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c
 
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.i: cmake_force
@@ -338,7 +351,7 @@ CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.
 
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj   -c D:\Desktop\newfolder\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c
 
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.i: cmake_force
@@ -351,7 +364,7 @@ CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_
 
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj   -c D:\Desktop\newfolder\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c
 
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i: cmake_force
@@ -364,7 +377,7 @@ CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart
 
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_wwdg.c.obj   -c D:\Desktop\newfolder\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_wwdg.c
 
 CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.c.i: cmake_force
@@ -377,7 +390,7 @@ CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg
 
 CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj: ../Hardware/Exti.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Hardware\Exti.c.obj   -c D:\Desktop\newfolder\Hardware\Exti.c
 
 CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.i: cmake_force
@@ -388,9 +401,22 @@ CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.s"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Desktop\newfolder\Hardware\Exti.c -o CMakeFiles\newfolder.elf.dir\Hardware\Exti.c.s
 
+CMakeFiles/newfolder.elf.dir/Hardware/I2C1.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
+CMakeFiles/newfolder.elf.dir/Hardware/I2C1.c.obj: ../Hardware/I2C1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/I2C1.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Hardware\I2C1.c.obj   -c D:\Desktop\newfolder\Hardware\I2C1.c
+
+CMakeFiles/newfolder.elf.dir/Hardware/I2C1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/newfolder.elf.dir/Hardware/I2C1.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Desktop\newfolder\Hardware\I2C1.c > CMakeFiles\newfolder.elf.dir\Hardware\I2C1.c.i
+
+CMakeFiles/newfolder.elf.dir/Hardware/I2C1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/newfolder.elf.dir/Hardware/I2C1.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Desktop\newfolder\Hardware\I2C1.c -o CMakeFiles\newfolder.elf.dir\Hardware\I2C1.c.s
+
 CMakeFiles/newfolder.elf.dir/Hardware/Key.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Hardware/Key.c.obj: ../Hardware/Key.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/Key.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/Key.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Hardware\Key.c.obj   -c D:\Desktop\newfolder\Hardware\Key.c
 
 CMakeFiles/newfolder.elf.dir/Hardware/Key.c.i: cmake_force
@@ -403,7 +429,7 @@ CMakeFiles/newfolder.elf.dir/Hardware/Key.c.s: cmake_force
 
 CMakeFiles/newfolder.elf.dir/Hardware/Led.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Hardware/Led.c.obj: ../Hardware/Led.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/Led.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/Led.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Hardware\Led.c.obj   -c D:\Desktop\newfolder\Hardware\Led.c
 
 CMakeFiles/newfolder.elf.dir/Hardware/Led.c.i: cmake_force
@@ -416,7 +442,7 @@ CMakeFiles/newfolder.elf.dir/Hardware/Led.c.s: cmake_force
 
 CMakeFiles/newfolder.elf.dir/Hardware/Timer2.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Hardware/Timer2.c.obj: ../Hardware/Timer2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/Timer2.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/Timer2.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Hardware\Timer2.c.obj   -c D:\Desktop\newfolder\Hardware\Timer2.c
 
 CMakeFiles/newfolder.elf.dir/Hardware/Timer2.c.i: cmake_force
@@ -429,7 +455,7 @@ CMakeFiles/newfolder.elf.dir/Hardware/Timer2.c.s: cmake_force
 
 CMakeFiles/newfolder.elf.dir/Hardware/adc1.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Hardware/adc1.c.obj: ../Hardware/adc1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/adc1.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/adc1.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Hardware\adc1.c.obj   -c D:\Desktop\newfolder\Hardware\adc1.c
 
 CMakeFiles/newfolder.elf.dir/Hardware/adc1.c.i: cmake_force
@@ -442,7 +468,7 @@ CMakeFiles/newfolder.elf.dir/Hardware/adc1.c.s: cmake_force
 
 CMakeFiles/newfolder.elf.dir/Hardware/iwg.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Hardware/iwg.c.obj: ../Hardware/iwg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/iwg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/iwg.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Hardware\iwg.c.obj   -c D:\Desktop\newfolder\Hardware\iwg.c
 
 CMakeFiles/newfolder.elf.dir/Hardware/iwg.c.i: cmake_force
@@ -455,7 +481,7 @@ CMakeFiles/newfolder.elf.dir/Hardware/iwg.c.s: cmake_force
 
 CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj: ../Hardware/uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Hardware\uart.c.obj   -c D:\Desktop\newfolder\Hardware\uart.c
 
 CMakeFiles/newfolder.elf.dir/Hardware/uart.c.i: cmake_force
@@ -468,7 +494,7 @@ CMakeFiles/newfolder.elf.dir/Hardware/uart.c.s: cmake_force
 
 CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.obj: ../Hardware/wwdg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Hardware\wwdg.c.obj   -c D:\Desktop\newfolder\Hardware\wwdg.c
 
 CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.i: cmake_force
@@ -481,7 +507,7 @@ CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.s: cmake_force
 
 CMakeFiles/newfolder.elf.dir/USMART/usmart.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/USMART/usmart.c.obj: ../USMART/usmart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/newfolder.elf.dir/USMART/usmart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/newfolder.elf.dir/USMART/usmart.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\USMART\usmart.c.obj   -c D:\Desktop\newfolder\USMART\usmart.c
 
 CMakeFiles/newfolder.elf.dir/USMART/usmart.c.i: cmake_force
@@ -494,7 +520,7 @@ CMakeFiles/newfolder.elf.dir/USMART/usmart.c.s: cmake_force
 
 CMakeFiles/newfolder.elf.dir/USMART/usmart_config.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/USMART/usmart_config.c.obj: ../USMART/usmart_config.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/newfolder.elf.dir/USMART/usmart_config.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/newfolder.elf.dir/USMART/usmart_config.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\USMART\usmart_config.c.obj   -c D:\Desktop\newfolder\USMART\usmart_config.c
 
 CMakeFiles/newfolder.elf.dir/USMART/usmart_config.c.i: cmake_force
@@ -507,7 +533,7 @@ CMakeFiles/newfolder.elf.dir/USMART/usmart_config.c.s: cmake_force
 
 CMakeFiles/newfolder.elf.dir/USMART/usmart_str.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/USMART/usmart_str.c.obj: ../USMART/usmart_str.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/newfolder.elf.dir/USMART/usmart_str.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/newfolder.elf.dir/USMART/usmart_str.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\USMART\usmart_str.c.obj   -c D:\Desktop\newfolder\USMART\usmart_str.c
 
 CMakeFiles/newfolder.elf.dir/USMART/usmart_str.c.i: cmake_force
@@ -520,7 +546,7 @@ CMakeFiles/newfolder.elf.dir/USMART/usmart_str.c.s: cmake_force
 
 CMakeFiles/newfolder.elf.dir/startup/startup_stm32f103xe.s.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/startup/startup_stm32f103xe.s.obj: ../startup/startup_stm32f103xe.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object CMakeFiles/newfolder.elf.dir/startup/startup_stm32f103xe.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building ASM object CMakeFiles/newfolder.elf.dir/startup/startup_stm32f103xe.s.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\newfolder.elf.dir\startup\startup_stm32f103xe.s.obj -c D:\Desktop\newfolder\startup\startup_stm32f103xe.s
 
 # Object files for target newfolder.elf
@@ -540,6 +566,7 @@ newfolder_elf_OBJECTS = \
 "CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj" \
 "CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj" \
 "CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj" \
+"CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj" \
 "CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.c.obj" \
 "CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj" \
 "CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj" \
@@ -549,6 +576,7 @@ newfolder_elf_OBJECTS = \
 "CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj" \
 "CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.c.obj" \
 "CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj" \
+"CMakeFiles/newfolder.elf.dir/Hardware/I2C1.c.obj" \
 "CMakeFiles/newfolder.elf.dir/Hardware/Key.c.obj" \
 "CMakeFiles/newfolder.elf.dir/Hardware/Led.c.obj" \
 "CMakeFiles/newfolder.elf.dir/Hardware/Timer2.c.obj" \
@@ -579,6 +607,7 @@ newfolder.elf: CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm
 newfolder.elf: CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj
 newfolder.elf: CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
 newfolder.elf: CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj
+newfolder.elf: CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
 newfolder.elf: CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.c.obj
 newfolder.elf: CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
 newfolder.elf: CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
@@ -588,6 +617,7 @@ newfolder.elf: CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm
 newfolder.elf: CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
 newfolder.elf: CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.c.obj
 newfolder.elf: CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj
+newfolder.elf: CMakeFiles/newfolder.elf.dir/Hardware/I2C1.c.obj
 newfolder.elf: CMakeFiles/newfolder.elf.dir/Hardware/Key.c.obj
 newfolder.elf: CMakeFiles/newfolder.elf.dir/Hardware/Led.c.obj
 newfolder.elf: CMakeFiles/newfolder.elf.dir/Hardware/Timer2.c.obj
@@ -601,7 +631,7 @@ newfolder.elf: CMakeFiles/newfolder.elf.dir/USMART/usmart_str.c.obj
 newfolder.elf: CMakeFiles/newfolder.elf.dir/startup/startup_stm32f103xe.s.obj
 newfolder.elf: CMakeFiles/newfolder.elf.dir/build.make
 newfolder.elf: CMakeFiles/newfolder.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking C executable newfolder.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Linking C executable newfolder.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\newfolder.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/Desktop/newfolder/cmake-build-debug/newfolder.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/Desktop/newfolder/cmake-build-debug/newfolder.bin"

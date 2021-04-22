@@ -236,6 +236,9 @@
 		<Unit filename="D:/Desktop/newfolder/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h">
 			<Option target="newfolder.elf"/>
 		</Unit>
+		<Unit filename="D:/Desktop/newfolder/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h">
+			<Option target="newfolder.elf"/>
+		</Unit>
 		<Unit filename="D:/Desktop/newfolder/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h">
 			<Option target="newfolder.elf"/>
 		</Unit>
@@ -290,6 +293,9 @@
 		<Unit filename="D:/Desktop/newfolder/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c">
 			<Option target="newfolder.elf"/>
 		</Unit>
+		<Unit filename="D:/Desktop/newfolder/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c">
+			<Option target="newfolder.elf"/>
+		</Unit>
 		<Unit filename="D:/Desktop/newfolder/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.c">
 			<Option target="newfolder.elf"/>
 		</Unit>
@@ -318,6 +324,12 @@
 			<Option target="newfolder.elf"/>
 		</Unit>
 		<Unit filename="D:/Desktop/newfolder/Hardware/Exti.h">
+			<Option target="newfolder.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/newfolder/Hardware/I2C1.c">
+			<Option target="newfolder.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/newfolder/Hardware/I2C1.h">
 			<Option target="newfolder.elf"/>
 		</Unit>
 		<Unit filename="D:/Desktop/newfolder/Hardware/Key.c">

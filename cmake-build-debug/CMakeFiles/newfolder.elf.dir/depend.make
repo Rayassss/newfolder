@@ -1096,3 +1096,10 @@ CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.obj: ../Hardware/Led.h
 CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.obj: ../Hardware/wwdg.c
 CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.obj: ../Hardware/wwdg.h
 
+CMakeFiles/newfolder.elf.dir/USMART/usmart.c.obj: ../USMART/usmart.c
+CMakeFiles/newfolder.elf.dir/USMART/usmart.c.obj: ../USMART/usmart.h
+
+CMakeFiles/newfolder.elf.dir/USMART/usmart_config.c.obj: ../USMART/usmart_config.c
+
+CMakeFiles/newfolder.elf.dir/USMART/usmart_str.c.obj: ../USMART/usmart_str.c
+
