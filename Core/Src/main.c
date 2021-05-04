@@ -1,20 +1,30 @@
 #include "main.h"
-void SystemClock_Config(void);
+#include "mpu6050.h"
+MPU6050_t DataStruct;
+extern unsigned char len;
 static void MX_GPIO_Init(void);
+void SystemClock_Config(void);
+unsigned char a;
 int main(void) {
+    short Accel[3];
+    short Gyro[3];
     HAL_Init();
     SystemClock_Config();
-    MX_GPIO_Init();
-    MX_I2C1_Init();
+    Led_init();
+    USART1_Init();
+    i2c_GPIO_Config();
+    MPU6050_Init();
     while (1) {
+//        MPU6050ReadAcc(Accel);
+//        print_usart1("\r\n%8d%8d%8d    ", Accel[0], Accel[1], Accel[2]);
+//        MPU6050ReadGyro(Gyro);
+//        printf("%8d%8d%8d    ", Gyro[0], Gyro[1], Gyro[2]);
+        MPU6050_Read_All(&DataStruct);
+        print_usart1("roll %8d pitch %8d", (int) DataStruct.KalmanAngleX, (int) DataStruct.KalmanAngleY);
+        HAL_Delay(200);
     }
 
 }
-
-/**
-  * @brief System Clock Configuration
-  * @retval None
-  */
 void SystemClock_Config(void) {
     RCC_OscInitTypeDef RCC_OscInitStruct = {0};
     RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
@@ -58,7 +68,8 @@ void SystemClock_Config(void) {
   * @retval None
   */
 static void MX_GPIO_Init(void) {
-    GPIO_InitTypeDef GPIO_InitStruct = {0};
+    __HAL_RCC_GPIOA_CLK_ENABLE();
+    __HAL_RCC_GPIOB_CLK_ENABLE();
 
 }
 void Error_Handler(void) {

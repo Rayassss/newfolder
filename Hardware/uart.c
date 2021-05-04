@@ -4,6 +4,8 @@
 
 #include "uart.h"
 UART_HandleTypeDef UART1_Handler;
+DMA_HandleTypeDef hdma_usart1_tx;
+DMA_HandleTypeDef hdma_usart1_rx;
 unsigned char aRxBuffer[RXBUFFERSIZE];
 unsigned short UART_RX_STA = 0;
 unsigned char USART_RX_BUF[USART_REC_LEN];
@@ -18,7 +20,7 @@ void print_usart1(const char *fmt, ...) {
     HAL_UART_Transmit(&UART1_Handler, (unsigned char *) Buffer, strlen(Buffer), 0xFFFFFFFFUL);
     va_end(ap);
 }
-void MX_USART1_UART_Init(void) {
+void USART1_Init(void) {
     GPIO_InitTypeDef GPIO_Initure;
     __HAL_RCC_GPIOA_CLK_ENABLE();
     __HAL_RCC_USART1_CLK_ENABLE();

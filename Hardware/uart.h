@@ -23,8 +23,7 @@ extern UART_HandleTypeDef UART1_Handler;
 extern unsigned char aRxBuffer[RXBUFFERSIZE];
 extern unsigned short UART_RX_STA;
 extern unsigned char USART_RX_BUF[USART_REC_LEN];
-void UART1_Init(unsigned int boudrate);
-void MX_USART1_UART_Init(void);
+void USART1_Init(void);
 void Context_in_while_for_uart1(void);
 void print_usart1(const char *fmt, ...);
 #endif //NEWFOLDER_HARDWARE_UART_H_

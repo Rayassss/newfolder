@@ -8,7 +8,7 @@
 #include "stm32f1xx_hal_rcc.h"
 #define Ledreset_1 HAL_GPIO_WritePin(GPIOD, GPIO_PIN_3, GPIO_PIN_RESET)
 #define Ledset_1 HAL_GPIO_WritePin(GPIOD, GPIO_PIN_3, GPIO_PIN_SET)
-#define Ledreset_2 HAL_GPIO_WritePin(GPIOD, GPIO_PIN_4, GPIO_PIN_RESET)
+#define Ledreset_2 HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_RESET)
 #define Ledset_2 HAL_GPIO_WritePin(GPIOD, GPIO_PIN_4, GPIO_PIN_SET)
 void Led_init(void);
 
