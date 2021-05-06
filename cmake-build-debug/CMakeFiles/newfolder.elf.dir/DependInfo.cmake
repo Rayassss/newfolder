@@ -24,6 +24,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../Drivers/CMSIS/Include"
   "../Hardware"
   "../USMART"
+  "../Device"
   )
 set(CMAKE_DEPENDS_CHECK_C
   "D:/Desktop/newfolder/Core/Src/main.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj"
@@ -31,6 +32,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "D:/Desktop/newfolder/Core/Src/stm32f1xx_it.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj"
   "D:/Desktop/newfolder/Core/Src/syscalls.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Core/Src/syscalls.c.obj"
   "D:/Desktop/newfolder/Core/Src/system_stm32f1xx.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Core/Src/system_stm32f1xx.c.obj"
+  "D:/Desktop/newfolder/Device/IMU.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Device/IMU.c.obj"
   "D:/Desktop/newfolder/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
   "D:/Desktop/newfolder/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj"
   "D:/Desktop/newfolder/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj"
@@ -83,6 +85,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../Drivers/CMSIS/Include"
   "../Hardware"
   "../USMART"
+  "../Device"
   )
 
 # Targets to which this target links.

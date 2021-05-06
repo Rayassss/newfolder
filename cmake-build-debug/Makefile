@@ -277,6 +277,33 @@ Core/Src/system_stm32f1xx.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Core/Src/system_stm32f1xx.c.s
 .PHONY : Core/Src/system_stm32f1xx.c.s
 
+Device/IMU.obj: Device/IMU.c.obj
+
+.PHONY : Device/IMU.obj
+
+# target to build an object file
+Device/IMU.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Device/IMU.c.obj
+.PHONY : Device/IMU.c.obj
+
+Device/IMU.i: Device/IMU.c.i
+
+.PHONY : Device/IMU.i
+
+# target to preprocess a source file
+Device/IMU.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Device/IMU.c.i
+.PHONY : Device/IMU.c.i
+
+Device/IMU.s: Device/IMU.c.s
+
+.PHONY : Device/IMU.s
+
+# target to generate assembly for a file
+Device/IMU.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Device/IMU.c.s
+.PHONY : Device/IMU.c.s
+
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
 
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.obj
@@ -1228,6 +1255,9 @@ help:
 	@echo ... Core/Src/system_stm32f1xx.obj
 	@echo ... Core/Src/system_stm32f1xx.i
 	@echo ... Core/Src/system_stm32f1xx.s
+	@echo ... Device/IMU.obj
+	@echo ... Device/IMU.i
+	@echo ... Device/IMU.s
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.s

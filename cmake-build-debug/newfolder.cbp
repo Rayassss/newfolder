@@ -33,6 +33,7 @@
 					<Add directory="D:/Desktop/newfolder/Drivers/CMSIS/Include"/>
 					<Add directory="D:/Desktop/newfolder/Hardware"/>
 					<Add directory="D:/Desktop/newfolder/USMART"/>
+					<Add directory="D:/Desktop/newfolder/Device"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1/arm-none-eabi"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1/backward"/>
@@ -63,6 +64,7 @@
 					<Add directory="D:/Desktop/newfolder/Drivers/CMSIS/Include"/>
 					<Add directory="D:/Desktop/newfolder/Hardware"/>
 					<Add directory="D:/Desktop/newfolder/USMART"/>
+					<Add directory="D:/Desktop/newfolder/Device"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1/arm-none-eabi"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1/backward"/>
@@ -123,6 +125,12 @@
 			<Option target="newfolder.elf"/>
 		</Unit>
 		<Unit filename="D:/Desktop/newfolder/Core/Src/system_stm32f1xx.c">
+			<Option target="newfolder.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/newfolder/Device/IMU.c">
+			<Option target="newfolder.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/newfolder/Device/IMU.h">
 			<Option target="newfolder.elf"/>
 		</Unit>
 		<Unit filename="D:/Desktop/newfolder/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h">

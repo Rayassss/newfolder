@@ -39,7 +39,7 @@ void USART1_Init(void) {
     HAL_NVIC_EnableIRQ(USART1_IRQn);
     HAL_NVIC_SetPriority(USART1_IRQn, 3, 3);
     UART1_Handler.Instance = USART1;
-    UART1_Handler.Init.BaudRate = 115200;
+    UART1_Handler.Init.BaudRate = 460800;
     UART1_Handler.Init.WordLength = UART_WORDLENGTH_8B;
     UART1_Handler.Init.Mode = UART_MODE_TX_RX;
     UART1_Handler.Init.HwFlowCtl = UART_HWCONTROL_NONE;

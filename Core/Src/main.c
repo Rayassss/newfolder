@@ -1,22 +1,27 @@
 #include "main.h"
-#include "mpu6050.h"
-#include "mpu9250.h"
-MPU6050_t DataStruct;
 extern unsigned char len;
-static void MX_GPIO_Init(void);
 void SystemClock_Config(void);
-unsigned char a;
 int main(void) {
+    unsigned short counter = 0;
     HAL_Init();
     SystemClock_Config();
     Led_init();
     USART1_Init();
     i2c_GPIO_Config();
-    //   invmsMPU9250Init();
     while (1) {
         if (invmsICM20948Check()) {
+
             HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
             HAL_Delay(100);
+            invmsICM20948Init();
+            while (1) {
+                counter++;
+                IMU_GetYawPitchRoll(angles);
+                if (counter == 20) {
+                    counter = 0;
+                    print_usart1("\r\n Roll: %.2f     Pitch: %.2f     Yaw: %.2f \r\n", angles[2], angles[1], angles[0]);
+                }
+            }
         }
     }
 

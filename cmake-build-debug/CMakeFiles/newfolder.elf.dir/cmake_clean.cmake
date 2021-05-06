@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj"
   "CMakeFiles/newfolder.elf.dir/Core/Src/syscalls.c.obj"
   "CMakeFiles/newfolder.elf.dir/Core/Src/system_stm32f1xx.c.obj"
+  "CMakeFiles/newfolder.elf.dir/Device/IMU.c.obj"
   "CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
   "CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj"
   "CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj"

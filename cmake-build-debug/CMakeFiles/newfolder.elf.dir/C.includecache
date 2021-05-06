@@ -29,6 +29,8 @@ I2C1.h
 ../Core/Inc/I2C1.h
 ICM20948.h
 ../Core/Inc/ICM20948.h
+IMU.h
+../Core/Inc/IMU.h
 
 ../Core/Inc/stm32f1xx_hal_conf.h
 stm32f1xx_hal_rcc.h
@@ -99,6 +101,20 @@ stm32f1xx_hal_mmc.h
 ../Core/Inc/stm32f1xx_hal_mmc.h
 
 ../Core/Inc/stm32f1xx_it.h
+
+../Device/IMU.h
+main.h
+../Device/main.h
+inttypes.h
+-
+stdbool.h
+-
+stdio.h
+-
+string.h
+-
+math.h
+-
 
 ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
 core_cm3.h
@@ -358,16 +374,6 @@ stm32f1xx_hal_iwdg.h
 Led.h
 ../Hardware/Led.h
 
-../Hardware/mpu6050.h
-stdint.h
--
-I2C1.h
-../Hardware/I2C1.h
-
-../Hardware/mpu9250.h
-I2C1.h
-../Hardware/I2C1.h
-
 ../Hardware/uart.h
 stm32f1xx_hal.h
 ../Hardware/stm32f1xx_hal.h
@@ -395,8 +401,4 @@ Led.h
 D:/Desktop/newfolder/Core/Src/main.c
 main.h
 D:/Desktop/newfolder/Core/Src/main.h
-mpu6050.h
-D:/Desktop/newfolder/Core/Src/mpu6050.h
-mpu9250.h
-D:/Desktop/newfolder/Core/Src/mpu9250.h
 
