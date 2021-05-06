@@ -47,6 +47,7 @@ CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj
  ../Hardware/adc1.h
  ../Hardware/iwg.h
  ../Hardware/mpu6050.h
+ ../Hardware/mpu9250.h
  ../Hardware/uart.h
  ../Hardware/wwdg.h
  D:/Desktop/newfolder/Core/Src/main.c
@@ -1136,6 +1137,8 @@ CMakeFiles/newfolder.elf.dir/Hardware/iwg.c.obj
  D:/Desktop/newfolder/Hardware/iwg.c
  D:/Desktop/newfolder/Hardware/iwg.h
 CMakeFiles/newfolder.elf.dir/Hardware/mpu6050.c.obj
+ D:/Desktop/newfolder/Hardware/mpu6050.c
+CMakeFiles/newfolder.elf.dir/Hardware/mpu9250.c.obj
  ../Core/Inc/main.h
  ../Core/Inc/stm32f1xx_hal_conf.h
  ../Core/Inc/stm32f1xx_it.h
@@ -1173,15 +1176,15 @@ CMakeFiles/newfolder.elf.dir/Hardware/mpu6050.c.obj
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_wwdg.h
  ../Hardware/Key.h
+ ../Hardware/Led.h
  ../Hardware/Timer2.h
  ../Hardware/adc1.h
  ../Hardware/iwg.h
+ ../Hardware/uart.h
  ../Hardware/wwdg.h
  D:/Desktop/newfolder/Hardware/I2C1.h
- D:/Desktop/newfolder/Hardware/Led.h
- D:/Desktop/newfolder/Hardware/mpu6050.c
- D:/Desktop/newfolder/Hardware/mpu6050.h
- D:/Desktop/newfolder/Hardware/uart.h
+ D:/Desktop/newfolder/Hardware/mpu9250.c
+ D:/Desktop/newfolder/Hardware/mpu9250.h
 CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj
  ../Core/Inc/stm32f1xx_hal_conf.h
  ../Core/Inc/stm32f1xx_it.h

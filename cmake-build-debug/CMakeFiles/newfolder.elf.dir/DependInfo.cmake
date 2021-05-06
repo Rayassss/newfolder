@@ -58,6 +58,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "D:/Desktop/newfolder/Hardware/adc1.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/adc1.c.obj"
   "D:/Desktop/newfolder/Hardware/iwg.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/iwg.c.obj"
   "D:/Desktop/newfolder/Hardware/mpu6050.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/mpu6050.c.obj"
+  "D:/Desktop/newfolder/Hardware/mpu9250.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/mpu9250.c.obj"
   "D:/Desktop/newfolder/Hardware/uart.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj"
   "D:/Desktop/newfolder/Hardware/wwdg.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.obj"
   "D:/Desktop/newfolder/USMART/usmart.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/USMART/usmart.c.obj"

@@ -1006,6 +1006,33 @@ Hardware/mpu6050.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/mpu6050.c.s
 .PHONY : Hardware/mpu6050.c.s
 
+Hardware/mpu9250.obj: Hardware/mpu9250.c.obj
+
+.PHONY : Hardware/mpu9250.obj
+
+# target to build an object file
+Hardware/mpu9250.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/mpu9250.c.obj
+.PHONY : Hardware/mpu9250.c.obj
+
+Hardware/mpu9250.i: Hardware/mpu9250.c.i
+
+.PHONY : Hardware/mpu9250.i
+
+# target to preprocess a source file
+Hardware/mpu9250.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/mpu9250.c.i
+.PHONY : Hardware/mpu9250.c.i
+
+Hardware/mpu9250.s: Hardware/mpu9250.c.s
+
+.PHONY : Hardware/mpu9250.s
+
+# target to generate assembly for a file
+Hardware/mpu9250.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/mpu9250.c.s
+.PHONY : Hardware/mpu9250.c.s
+
 Hardware/uart.obj: Hardware/uart.c.obj
 
 .PHONY : Hardware/uart.obj
@@ -1255,6 +1282,9 @@ help:
 	@echo ... Hardware/mpu6050.obj
 	@echo ... Hardware/mpu6050.i
 	@echo ... Hardware/mpu6050.s
+	@echo ... Hardware/mpu9250.obj
+	@echo ... Hardware/mpu9250.i
+	@echo ... Hardware/mpu9250.s
 	@echo ... Hardware/uart.obj
 	@echo ... Hardware/uart.i
 	@echo ... Hardware/uart.s

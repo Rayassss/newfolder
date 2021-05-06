@@ -368,6 +368,12 @@
 		<Unit filename="D:/Desktop/newfolder/Hardware/mpu6050.h">
 			<Option target="newfolder.elf"/>
 		</Unit>
+		<Unit filename="D:/Desktop/newfolder/Hardware/mpu9250.c">
+			<Option target="newfolder.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/newfolder/Hardware/mpu9250.h">
+			<Option target="newfolder.elf"/>
+		</Unit>
 		<Unit filename="D:/Desktop/newfolder/Hardware/uart.c">
 			<Option target="newfolder.elf"/>
 		</Unit>

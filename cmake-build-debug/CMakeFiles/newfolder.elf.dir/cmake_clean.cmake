@@ -31,6 +31,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/newfolder.elf.dir/Hardware/adc1.c.obj"
   "CMakeFiles/newfolder.elf.dir/Hardware/iwg.c.obj"
   "CMakeFiles/newfolder.elf.dir/Hardware/mpu6050.c.obj"
+  "CMakeFiles/newfolder.elf.dir/Hardware/mpu9250.c.obj"
   "CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj"
   "CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.obj"
   "CMakeFiles/newfolder.elf.dir/USMART/usmart.c.obj"

@@ -7,201 +7,13 @@
 #define RCC_I2C_PORT    RCC_APB2Periph_GPIOB        /* GPIO¶Ë¿ÚÊ±ÖÓ */
 #define I2C_SCL_PIN        GPIO_PIN_6            /* Á¬½Óµ½SCLÊ±ÖÓÏßµÄGPIO */
 #define I2C_SDA_PIN        GPIO_PIN_7            /* Á¬½Óµ½SDAÊý¾ÝÏßµÄGPIO */
-I2C_HandleTypeDef hi2c1;
 
+/**
+  * @brief  Initializes I2C
+  * @param  None
+  * @retval None
+  */
 
-
-/* ¶¨Òå¶ÁÐ´SCLºÍSDAµÄºê£¬ÒÑÔö¼Ó´úÂëµÄ¿ÉÒÆÖ²ÐÔºÍ¿ÉÔÄ¶ÁÐÔ */
-#if 0    /* Ìõ¼þ±àÒë£º 1 Ñ¡ÔñGPIOµÄ¿âº¯ÊýÊµÏÖIO¶ÁÐ´ */
-#define I2C_SCL_1()  GPIO_SetBits(GPIO_PORT_I2C, I2C_SCL_PIN)		/* SCL = 1 */
-#define I2C_SCL_0()  GPIO_ResetBits(GPIO_PORT_I2C, I2C_SCL_PIN)		/* SCL = 0 */
-
-#define I2C_SDA_1()  GPIO_SetBits(GPIO_PORT_I2C, I2C_SDA_PIN)		/* SDA = 1 */
-#define I2C_SDA_0()  GPIO_ResetBits(GPIO_PORT_I2C, I2C_SDA_PIN)		/* SDA = 0 */
-
-#define I2C_SDA_READ()  GPIO_ReadInputDataBit(GPIO_PORT_I2C, I2C_SDA_PIN)	/* ¶ÁSDA¿ÚÏß×´Ì¬ */
-#else	/* Õâ¸ö·ÖÖ§Ñ¡ÔñÖ±½Ó¼Ä´æÆ÷²Ù×÷ÊµÏÖIO¶ÁÐ´ */
-/*¡¡×¢Òâ£ºÈçÏÂÐ´·¨£¬ÔÚIAR×î¸ß¼¶±ðÓÅ»¯Ê±£¬»á±»±àÒëÆ÷´íÎóÓÅ»¯ */
-#define I2C_SCL_1()  GPIO_PORT_I2C->BSRR = I2C_SCL_PIN                /* SCL = 1 */
-#define I2C_SCL_0()  GPIO_PORT_I2C->BRR = I2C_SCL_PIN                /* SCL = 0 */
-
-#define I2C_SDA_1()  GPIO_PORT_I2C->BSRR = I2C_SDA_PIN                /* SDA = 1 */
-#define I2C_SDA_0()  GPIO_PORT_I2C->BRR = I2C_SDA_PIN                /* SDA = 0 */
-
-#define I2C_SDA_READ()  ((GPIO_PORT_I2C->IDR & I2C_SDA_PIN) != 0)    /* ¶ÁSDA¿ÚÏß×´Ì¬ */
-#endif
-static void i2c_Delay(void) {
-    __IO uint32_t Delay = 2 * 72 / 8;//(SystemCoreClock / 8U / 1000000U)两微妙延时
-    do {
-        __NOP();
-    } while (Delay--);
-}
-
-/*
-*********************************************************************************************************
-*	º¯ Êý Ãû: i2c_Start
-*	¹¦ÄÜËµÃ÷: CPU·¢ÆðI2C×ÜÏßÆô¶¯ÐÅºÅ
-*	ÐÎ    ²Î£ºÎÞ
-*	·µ »Ø Öµ: ÎÞ
-*********************************************************************************************************
-*/
-void i2c_Start(void) {
-    /* µ±SCL¸ßµçÆ½Ê±£¬SDA³öÏÖÒ»¸öÏÂÌøÑØ±íÊ¾I2C×ÜÏßÆô¶¯ÐÅºÅ */
-    I2C_SDA_1();
-    I2C_SCL_1();
-    i2c_Delay();
-    I2C_SDA_0();
-    i2c_Delay();
-    I2C_SCL_0();
-    i2c_Delay();
-}
-
-/*
-*********************************************************************************************************
-*	º¯ Êý Ãû: i2c_Start
-*	¹¦ÄÜËµÃ÷: CPU·¢ÆðI2C×ÜÏßÍ£Ö¹ÐÅºÅ
-*	ÐÎ    ²Î£ºÎÞ
-*	·µ »Ø Öµ: ÎÞ
-*********************************************************************************************************
-*/
-void i2c_Stop(void) {
-    /* µ±SCL¸ßµçÆ½Ê±£¬SDA³öÏÖÒ»¸öÉÏÌøÑØ±íÊ¾I2C×ÜÏßÍ£Ö¹ÐÅºÅ */
-    I2C_SDA_0();
-    I2C_SCL_1();
-    i2c_Delay();
-    I2C_SDA_1();
-}
-
-/*
-*********************************************************************************************************
-*	º¯ Êý Ãû: i2c_SendByte
-*	¹¦ÄÜËµÃ÷: CPUÏòI2C×ÜÏßÉè±¸·¢ËÍ8bitÊý¾Ý
-*	ÐÎ    ²Î£º_ucByte £º µÈ´ý·¢ËÍµÄ×Ö½Ú
-*	·µ »Ø Öµ: ÎÞ
-*********************************************************************************************************
-*/
-void i2c_SendByte(uint8_t _ucByte) {
-    uint8_t i;
-
-    /* ÏÈ·¢ËÍ×Ö½ÚµÄ¸ßÎ»bit7 */
-    for (i = 0; i < 8; i++) {
-        if (_ucByte & 0x80) {
-            I2C_SDA_1();
-        } else {
-            I2C_SDA_0();
-        }
-        i2c_Delay();
-        I2C_SCL_1();
-        i2c_Delay();
-        I2C_SCL_0();
-        if (i == 7) {
-            I2C_SDA_1(); // ÊÍ·Å×ÜÏß
-        }
-        _ucByte <<= 1;    /* ×óÒÆÒ»¸öbit */
-        i2c_Delay();
-    }
-}
-
-/*
-*********************************************************************************************************
-*	º¯ Êý Ãû: i2c_ReadByte
-*	¹¦ÄÜËµÃ÷: CPU´ÓI2C×ÜÏßÉè±¸¶ÁÈ¡8bitÊý¾Ý
-*	ÐÎ    ²Î£ºÎÞ
-*	·µ »Ø Öµ: ¶Áµ½µÄÊý¾Ý
-*********************************************************************************************************
-*/
-uint8_t i2c_ReadByte(u8 ack) {
-    uint8_t i;
-    uint8_t value;
-
-    /* ¶Áµ½µÚ1¸öbitÎªÊý¾ÝµÄbit7 */
-    value = 0;
-    for (i = 0; i < 8; i++) {
-        value <<= 1;
-        I2C_SCL_1();
-        i2c_Delay();
-        if (I2C_SDA_READ()) {
-            value++;
-        }
-        I2C_SCL_0();
-        i2c_Delay();
-    }
-    if (ack == 0)
-        i2c_NAck();
-    else
-        i2c_Ack();
-    return value;
-}
-
-/*
-*********************************************************************************************************
-*	º¯ Êý Ãû: i2c_WaitAck
-*	¹¦ÄÜËµÃ÷: CPU²úÉúÒ»¸öÊ±ÖÓ£¬²¢¶ÁÈ¡Æ÷¼þµÄACKÓ¦´ðÐÅºÅ
-*	ÐÎ    ²Î£ºÎÞ
-*	·µ »Ø Öµ: ·µ»Ø0±íÊ¾ÕýÈ·Ó¦´ð£¬1±íÊ¾ÎÞÆ÷¼þÏìÓ¦
-*********************************************************************************************************
-*/
-uint8_t i2c_WaitAck(void) {
-    uint8_t re;
-
-    I2C_SDA_1();    /* CPUÊÍ·ÅSDA×ÜÏß */
-    i2c_Delay();
-    I2C_SCL_1();    /* CPUÇý¶¯SCL = 1, ´ËÊ±Æ÷¼þ»á·µ»ØACKÓ¦´ð */
-    i2c_Delay();
-    if (I2C_SDA_READ())    /* CPU¶ÁÈ¡SDA¿ÚÏß×´Ì¬ */
-    {
-        re = 1;
-    } else {
-        re = 0;
-    }
-    I2C_SCL_0();
-    i2c_Delay();
-    return re;
-}
-
-/*
-*********************************************************************************************************
-*	º¯ Êý Ãû: i2c_Ack
-*	¹¦ÄÜËµÃ÷: CPU²úÉúÒ»¸öACKÐÅºÅ
-*	ÐÎ    ²Î£ºÎÞ
-*	·µ »Ø Öµ: ÎÞ
-*********************************************************************************************************
-*/
-void i2c_Ack(void) {
-    I2C_SDA_0();    /* CPUÇý¶¯SDA = 0 */
-    i2c_Delay();
-    I2C_SCL_1();    /* CPU²úÉú1¸öÊ±ÖÓ */
-    i2c_Delay();
-    I2C_SCL_0();
-    i2c_Delay();
-    I2C_SDA_1();    /* CPUÊÍ·ÅSDA×ÜÏß */
-}
-
-/*
-*********************************************************************************************************
-*	º¯ Êý Ãû: i2c_NAck
-*	¹¦ÄÜËµÃ÷: CPU²úÉú1¸öNACKÐÅºÅ
-*	ÐÎ    ²Î£ºÎÞ
-*	·µ »Ø Öµ: ÎÞ
-*********************************************************************************************************
-*/
-void i2c_NAck(void) {
-    I2C_SDA_1();    /* CPUÇý¶¯SDA = 1 */
-    i2c_Delay();
-    I2C_SCL_1();    /* CPU²úÉú1¸öÊ±ÖÓ */
-    i2c_Delay();
-    I2C_SCL_0();
-    i2c_Delay();
-}
-
-/*
-*********************************************************************************************************
-*	º¯ Êý Ãû: i2c_GPIO_Config
-*	¹¦ÄÜËµÃ÷: ÅäÖÃI2C×ÜÏßµÄGPIO£¬²ÉÓÃÄ£ÄâIOµÄ·½Ê½ÊµÏÖ
-*	ÐÎ    ²Î£ºÎÞ
-*	·µ »Ø Öµ: ÎÞ
-*********************************************************************************************************
-*/
 void i2c_GPIO_Config(void) {
     GPIO_InitTypeDef GPIO_InitStruct = {0};
     __HAL_RCC_GPIOB_CLK_ENABLE();
@@ -209,29 +21,363 @@ void i2c_GPIO_Config(void) {
     GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-    i2c_Stop();
+    I2C_SCL_Set();
+    I2C_SDA_Set();
+}
+void Delay_us(uint16_t Time) {
+    __IO uint32_t Delay = Time * 72 / 8;//(SystemCoreClock / 8U / 1000000U)微妙延时
+    do {
+        __NOP();
+    } while (Delay--);
 }
 
-/*
-*********************************************************************************************************
-*	º¯ Êý Ãû: i2c_CheckDevice
-*	¹¦ÄÜËµÃ÷: ¼ì²âI2C×ÜÏßÉè±¸£¬CPUÏò·¢ËÍÉè±¸µØÖ·£¬È»ºó¶ÁÈ¡Éè±¸Ó¦´ðÀ´ÅÐ¶Ï¸ÃÉè±¸ÊÇ·ñ´æÔÚ
-*	ÐÎ    ²Î£º_Address£ºÉè±¸µÄI2C×ÜÏßµØÖ·
-*	·µ »Ø Öµ: ·µ»ØÖµ 0 ±íÊ¾ÕýÈ·£¬ ·µ»Ø1±íÊ¾Î´Ì½²âµ½
-*********************************************************************************************************
-*/
-uint8_t i2c_CheckDevice(uint8_t _Address) {
-    uint8_t ucAck;
-
-    i2c_GPIO_Config();        /* ÅäÖÃGPIO */
-
-    i2c_Start();        /* ·¢ËÍÆô¶¯ÐÅºÅ */
-
-    /* ·¢ËÍÉè±¸µØÖ·+¶ÁÐ´¿ØÖÆbit£¨0 = w£¬ 1 = r) bit7 ÏÈ´« */
-    i2c_SendByte(_Address | I2C_WR);
-    ucAck = i2c_WaitAck();    /* ¼ì²âÉè±¸µÄACKÓ¦´ð */
-
-    i2c_Stop();            /* ·¢ËÍÍ£Ö¹ÐÅºÅ */
-
-    return ucAck;
+void Delay_ms(uint16_t Time) {
+    HAL_Delay(Time);
 }
+
+void I2C_SDAMode(uint8_t Mode) {
+    GPIO_InitTypeDef GPIO_InitStructure;
+
+    GPIO_InitStructure.Pin = I2C_SDA_PIN;
+
+    if (Mode)
+        GPIO_InitStructure.Mode = GPIO_MODE_OUTPUT_OD;
+    else
+        GPIO_InitStructure.Mode = GPIO_MODE_INPUT;
+
+    GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_HIGH;
+    HAL_GPIO_Init(GPIOB, &GPIO_InitStructure);
+    Delay_us(10);
+}
+
+/**
+  * @brief   Generates I2C communication START condition.
+  *
+  * @param  None
+  *
+  * @retval  None
+**/
+
+void I2C_Start(void) {
+    I2C_SDAMode(I2C_SDA_OUT);
+    I2C_SDA_Set();
+    Delay_us(2);
+    I2C_SCL_Set();
+    Delay_us(2);
+    I2C_SDA_Clr();
+    Delay_us(4);
+    I2C_SCL_Clr();
+}
+
+/**
+  * @brief  Generates I2C communication STOP condition.
+  *
+  * @param  None
+  *
+  * @retval  None
+**/
+
+void I2C_Stop(void) {
+    I2C_SCL_Clr();
+    I2C_SDA_Clr();
+    Delay_us(2);
+    I2C_SCL_Set();
+    Delay_us(2);
+    I2C_SDA_Set();
+    Delay_us(4);
+}
+
+/**
+  * @brief  I2C is waiting for an ACK
+  *
+  * @param  None
+  *
+  * @retval  I2C ACK status
+  *              @arg 0:I2C has not waited an ACK
+  *              @arg 1:I2C has  waited an ACK
+**/
+
+bool I2C_WaiteForAck(void) {
+    uint8_t Retry = 0;
+
+    I2C_SCL_Clr();
+    Delay_us(1);
+    I2C_SCL_Set();
+    I2C_SDAMode(I2C_SDA_IN);
+    while (I2C_SDA_Get()) {
+        if (++Retry > 200) {
+            I2C_Stop();
+            return false;
+        }
+    }
+    I2C_SDAMode(I2C_SDA_OUT);
+    I2C_SCL_Clr();
+
+    return true;
+}
+
+/**
+  * @brief  I2C responds an ACK
+  *
+  * @param  None
+  *
+  * @retval  None
+**/
+
+void I2C_Ack(void) {
+    I2C_SCL_Clr();
+    I2C_SDAMode(I2C_SDA_OUT);
+    I2C_SDA_Clr();
+    Delay_us(2);
+    I2C_SCL_Set();
+    Delay_us(2);
+    I2C_SCL_Clr();
+}
+
+/**
+  * @brief  I2C responds an NACK
+  *
+  * @param  None
+  *
+  * @retval  None
+**/
+void I2C_NAck(void) {
+    I2C_SCL_Clr();
+    I2C_SDAMode(I2C_SDA_OUT);
+    I2C_SDA_Set();
+    Delay_us(2);
+    I2C_SCL_Set();
+    Delay_us(2);
+    I2C_SCL_Clr();
+}
+
+/**
+  * @brief  Write one bit to I2C bus
+  *
+  * @param DevAddr: The address byte of the slave device
+  * @param RegAddr: The address byte of  register of the slave device
+  * @param BitNum:  which bit of the byte that  would be writen to
+  * @param Data: bit value(0 or 1)
+  *
+  * @retval  true: writen one bit succeed
+**/
+
+bool I2C_WriteOneBit(uint8_t DevAddr, uint8_t RegAddr, uint8_t BitNum, uint8_t Data) {
+    uint8_t Dat;
+
+    Dat = I2C_ReadOneByte(DevAddr, RegAddr);
+    Dat = (Data != 0) ? (Dat | (1 << BitNum)) : (Dat & ~(1 << BitNum));
+    I2C_WriteOneByte(DevAddr, RegAddr, Dat);
+
+    return true;
+}
+
+/**
+  * @brief  Write couplesof bits to I2C bus
+  *
+  * @param DevAddr: The address byte of the slave device
+  * @param RegAddr: The address byte of  register of the slave device
+  * @param BitStart: the first bit of the several bits would be to writen
+  * @param Data: the data would be writen
+  * @retval  writen couples of bits succeed
+**/
+
+bool I2C_WriteBits(uint8_t DevAddr, uint8_t RegAddr, uint8_t BitStart, uint8_t Length, uint8_t Data) {
+
+    uint8_t Dat, Mask;
+
+    Dat = I2C_ReadOneByte(DevAddr, RegAddr);
+    Mask = (0xFF << (BitStart + 1)) | 0xFF >> ((8 - BitStart) + Length - 1);
+    Data <<= (8 - Length);
+    Data >>= (7 - BitStart);
+    Dat &= Mask;
+    Dat |= Data;
+    I2C_WriteOneByte(DevAddr, RegAddr, Dat);
+
+    return true;
+}
+
+/**
+  * @brief write an byte to I2C bus
+  *
+  * @param Data: the data would be writen
+  *
+  * @retval  None
+**/
+
+void I2C_WriteByte(uint8_t Data) {
+    uint8_t i;
+
+    I2C_SDAMode(I2C_SDA_OUT);
+    for (i = 0; i < 8; i++) {
+        I2C_SCL_Clr();
+        Delay_us(2);
+        if (Data & 0x80)
+            I2C_SDA_Set();
+        else
+            I2C_SDA_Clr();
+        Data <<= 1;
+        Delay_us(2);
+        I2C_SCL_Set();
+        Delay_us(2);
+    }
+}
+
+/**
+  * @brief  Write an byte to the specified device address through I2C bus.
+  *
+  * @param DevAddr: The address byte of the slave device
+  * @param RegAddr: The address byte of  register of the slave device
+ * @param  Data: the data would be writen to the specified device address
+  * @retval  None
+**/
+
+void I2C_WriteOneByte(uint8_t DevAddr, uint8_t RegAddr, uint8_t Data) {
+    I2C_Start();
+    I2C_WriteByte(DevAddr | I2C_Direction_Transmitter);
+    I2C_WaiteForAck();
+    I2C_WriteByte(RegAddr);
+    I2C_WaiteForAck();
+    I2C_WriteByte(Data);
+    I2C_WaiteForAck();
+    I2C_Stop();
+}
+
+/**
+  * @brief Write a buffer specified sizes  to the specified device address through I2C bus.
+  *
+  * @param DevAddr: The address byte of the slave device
+  * @param RegAddr: The address byte of  register of the slave device
+  * @param Num: the sizes of the specified buffer
+  * @param pBuff: point to a the specified buffer that would be writen
+  * @retval  false: paramter error
+  *                true: Write a buffer succeed
+**/
+
+bool I2C_WriteBuff(uint8_t DevAddr, uint8_t RegAddr, uint8_t Num, uint8_t *pBuff) {
+    uint8_t i;
+
+    if (0 == Num || NULL == pBuff) {
+        return false;
+    }
+
+    I2C_Start();
+    I2C_WriteByte(DevAddr | I2C_Direction_Transmitter);
+    I2C_WaiteForAck();
+    I2C_WriteByte(RegAddr);
+    I2C_WaiteForAck();
+
+    for (i = 0; i < Num; i++) {
+        I2C_WriteByte(*(pBuff + i));
+        I2C_WaiteForAck();
+    }
+    I2C_Stop();
+
+    return true;
+}
+
+/**
+  * @brief read an byte from I2C bus
+  *
+  * @param  Ack: send an ACK/NACK to I2C bus after read an byte
+  *              @arg 0: ACK
+  *              @arg 1:NACK
+  * @retval  None
+**/
+
+uint8_t I2C_ReadByte(uint8_t Ack) {
+    uint8_t i, RecDat = 0;
+
+    I2C_SDAMode(I2C_SDA_IN);
+    for (i = 0; i < 8; i++) {
+        I2C_SCL_Clr();
+        Delay_us(2);
+        I2C_SCL_Set();
+        RecDat <<= 1;
+        if (I2C_SDA_Get())
+            RecDat |= 0x01;
+        else
+            RecDat &= ~0x01;
+        Delay_us(2);
+    }
+    if (I2C_ACK == Ack)
+        I2C_Ack();
+    else
+        I2C_NAck();
+
+    return RecDat;
+}
+
+/**
+  * @brief Read an byte from the specified device address through I2C bus.
+  *
+  * @param DevAddr: The address byte of the slave device
+  * @param RegAddr: The address byte of  register of the slave device
+  *
+  * @retval  the byte read from I2C bus
+**/
+
+uint8_t I2C_ReadOneByte(uint8_t DevAddr, uint8_t RegAddr) {
+    uint8_t TempVal = 0;
+
+    I2C_Start();
+    I2C_WriteByte(DevAddr | I2C_Direction_Transmitter);
+    I2C_WaiteForAck();
+    I2C_WriteByte(RegAddr);
+    I2C_WaiteForAck();
+    I2C_Start();
+    I2C_WriteByte(DevAddr | I2C_Direction_Receiver);
+    I2C_WaiteForAck();
+    TempVal = I2C_ReadByte(I2C_NACK);
+    I2C_Stop();
+
+    return TempVal;
+}
+
+/**
+  * @brief Read couples of bytes  from the specified device address through I2C bus.
+  *
+  * @param DevAddr: The address byte of the slave device
+  * @param RegAddr: The address byte of  register of the slave device
+  * @param Num: the sizes of the specified buffer
+  * @param pBuff: point to a the specified buffer that would read bytes from I2C bus
+  * @retval  false: paramter error
+  *                true: read a buffer succeed
+**/
+
+bool I2C_ReadBuff(uint8_t DevAddr, uint8_t RegAddr, uint8_t Num, uint8_t *pBuff) {
+    uint8_t i;
+
+    if (0 == Num || NULL == pBuff) {
+        return false;
+    }
+
+    I2C_Start();
+    I2C_WriteByte(DevAddr | I2C_Direction_Transmitter);
+    I2C_WaiteForAck();
+    I2C_WriteByte(RegAddr);
+    I2C_WaiteForAck();
+    I2C_Start();
+    I2C_WriteByte(DevAddr | I2C_Direction_Receiver);
+    I2C_WaiteForAck();
+
+    for (i = 0; i < Num; i++) {
+        if ((Num - 1) == i) {
+            *(pBuff + i) = I2C_ReadByte(I2C_NACK);
+        } else {
+            *(pBuff + i) = I2C_ReadByte(I2C_ACK);
+        }
+    }
+
+    I2C_Stop();
+
+    return true;
+}
+
+/**
+  * @brief   Delay some times.
+  *
+  * @param  Time
+  *
+  * @retval  None
+**/

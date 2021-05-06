@@ -1,27 +1,23 @@
 #include "main.h"
 #include "mpu6050.h"
+#include "mpu9250.h"
 MPU6050_t DataStruct;
 extern unsigned char len;
 static void MX_GPIO_Init(void);
 void SystemClock_Config(void);
 unsigned char a;
 int main(void) {
-    short Accel[3];
-    short Gyro[3];
     HAL_Init();
     SystemClock_Config();
     Led_init();
     USART1_Init();
     i2c_GPIO_Config();
-    MPU6050_Init();
+    //   invmsMPU9250Init();
     while (1) {
-//        MPU6050ReadAcc(Accel);
-//        print_usart1("\r\n%8d%8d%8d    ", Accel[0], Accel[1], Accel[2]);
-//        MPU6050ReadGyro(Gyro);
-//        printf("%8d%8d%8d    ", Gyro[0], Gyro[1], Gyro[2]);
-        MPU6050_Read_All(&DataStruct);
-        print_usart1("roll %8d pitch %8d", (int) DataStruct.KalmanAngleX, (int) DataStruct.KalmanAngleY);
-        HAL_Delay(200);
+        if (invmsMPU9250Check()) {
+            HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
+            HAL_Delay(100);
+        }
     }
 
 }
