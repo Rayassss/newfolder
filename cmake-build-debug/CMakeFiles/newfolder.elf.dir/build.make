@@ -414,9 +414,22 @@ CMakeFiles/newfolder.elf.dir/Hardware/I2C1.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/newfolder.elf.dir/Hardware/I2C1.c.s"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Desktop\newfolder\Hardware\I2C1.c -o CMakeFiles\newfolder.elf.dir\Hardware\I2C1.c.s
 
+CMakeFiles/newfolder.elf.dir/Hardware/ICM20948.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
+CMakeFiles/newfolder.elf.dir/Hardware/ICM20948.c.obj: ../Hardware/ICM20948.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/ICM20948.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Hardware\ICM20948.c.obj   -c D:\Desktop\newfolder\Hardware\ICM20948.c
+
+CMakeFiles/newfolder.elf.dir/Hardware/ICM20948.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/newfolder.elf.dir/Hardware/ICM20948.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Desktop\newfolder\Hardware\ICM20948.c > CMakeFiles\newfolder.elf.dir\Hardware\ICM20948.c.i
+
+CMakeFiles/newfolder.elf.dir/Hardware/ICM20948.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/newfolder.elf.dir/Hardware/ICM20948.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Desktop\newfolder\Hardware\ICM20948.c -o CMakeFiles\newfolder.elf.dir\Hardware\ICM20948.c.s
+
 CMakeFiles/newfolder.elf.dir/Hardware/Key.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Hardware/Key.c.obj: ../Hardware/Key.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/Key.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/Key.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Hardware\Key.c.obj   -c D:\Desktop\newfolder\Hardware\Key.c
 
 CMakeFiles/newfolder.elf.dir/Hardware/Key.c.i: cmake_force
@@ -429,7 +442,7 @@ CMakeFiles/newfolder.elf.dir/Hardware/Key.c.s: cmake_force
 
 CMakeFiles/newfolder.elf.dir/Hardware/Led.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Hardware/Led.c.obj: ../Hardware/Led.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/Led.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/Led.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Hardware\Led.c.obj   -c D:\Desktop\newfolder\Hardware\Led.c
 
 CMakeFiles/newfolder.elf.dir/Hardware/Led.c.i: cmake_force
@@ -442,7 +455,7 @@ CMakeFiles/newfolder.elf.dir/Hardware/Led.c.s: cmake_force
 
 CMakeFiles/newfolder.elf.dir/Hardware/Timer2.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Hardware/Timer2.c.obj: ../Hardware/Timer2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/Timer2.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/Timer2.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Hardware\Timer2.c.obj   -c D:\Desktop\newfolder\Hardware\Timer2.c
 
 CMakeFiles/newfolder.elf.dir/Hardware/Timer2.c.i: cmake_force
@@ -455,7 +468,7 @@ CMakeFiles/newfolder.elf.dir/Hardware/Timer2.c.s: cmake_force
 
 CMakeFiles/newfolder.elf.dir/Hardware/adc1.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Hardware/adc1.c.obj: ../Hardware/adc1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/adc1.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/adc1.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Hardware\adc1.c.obj   -c D:\Desktop\newfolder\Hardware\adc1.c
 
 CMakeFiles/newfolder.elf.dir/Hardware/adc1.c.i: cmake_force
@@ -468,7 +481,7 @@ CMakeFiles/newfolder.elf.dir/Hardware/adc1.c.s: cmake_force
 
 CMakeFiles/newfolder.elf.dir/Hardware/iwg.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Hardware/iwg.c.obj: ../Hardware/iwg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/iwg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/iwg.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Hardware\iwg.c.obj   -c D:\Desktop\newfolder\Hardware\iwg.c
 
 CMakeFiles/newfolder.elf.dir/Hardware/iwg.c.i: cmake_force
@@ -481,7 +494,7 @@ CMakeFiles/newfolder.elf.dir/Hardware/iwg.c.s: cmake_force
 
 CMakeFiles/newfolder.elf.dir/Hardware/mpu6050.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Hardware/mpu6050.c.obj: ../Hardware/mpu6050.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/mpu6050.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/mpu6050.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Hardware\mpu6050.c.obj   -c D:\Desktop\newfolder\Hardware\mpu6050.c
 
 CMakeFiles/newfolder.elf.dir/Hardware/mpu6050.c.i: cmake_force
@@ -494,7 +507,7 @@ CMakeFiles/newfolder.elf.dir/Hardware/mpu6050.c.s: cmake_force
 
 CMakeFiles/newfolder.elf.dir/Hardware/mpu9250.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Hardware/mpu9250.c.obj: ../Hardware/mpu9250.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/mpu9250.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/mpu9250.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Hardware\mpu9250.c.obj   -c D:\Desktop\newfolder\Hardware\mpu9250.c
 
 CMakeFiles/newfolder.elf.dir/Hardware/mpu9250.c.i: cmake_force
@@ -507,7 +520,7 @@ CMakeFiles/newfolder.elf.dir/Hardware/mpu9250.c.s: cmake_force
 
 CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj: ../Hardware/uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/uart.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Hardware\uart.c.obj   -c D:\Desktop\newfolder\Hardware\uart.c
 
 CMakeFiles/newfolder.elf.dir/Hardware/uart.c.i: cmake_force
@@ -520,7 +533,7 @@ CMakeFiles/newfolder.elf.dir/Hardware/uart.c.s: cmake_force
 
 CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.obj: ../Hardware/wwdg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\Hardware\wwdg.c.obj   -c D:\Desktop\newfolder\Hardware\wwdg.c
 
 CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.i: cmake_force
@@ -533,7 +546,7 @@ CMakeFiles/newfolder.elf.dir/Hardware/wwdg.c.s: cmake_force
 
 CMakeFiles/newfolder.elf.dir/USMART/usmart.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/USMART/usmart.c.obj: ../USMART/usmart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/newfolder.elf.dir/USMART/usmart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/newfolder.elf.dir/USMART/usmart.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\USMART\usmart.c.obj   -c D:\Desktop\newfolder\USMART\usmart.c
 
 CMakeFiles/newfolder.elf.dir/USMART/usmart.c.i: cmake_force
@@ -546,7 +559,7 @@ CMakeFiles/newfolder.elf.dir/USMART/usmart.c.s: cmake_force
 
 CMakeFiles/newfolder.elf.dir/USMART/usmart_config.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/USMART/usmart_config.c.obj: ../USMART/usmart_config.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/newfolder.elf.dir/USMART/usmart_config.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/newfolder.elf.dir/USMART/usmart_config.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\USMART\usmart_config.c.obj   -c D:\Desktop\newfolder\USMART\usmart_config.c
 
 CMakeFiles/newfolder.elf.dir/USMART/usmart_config.c.i: cmake_force
@@ -559,7 +572,7 @@ CMakeFiles/newfolder.elf.dir/USMART/usmart_config.c.s: cmake_force
 
 CMakeFiles/newfolder.elf.dir/USMART/usmart_str.c.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/USMART/usmart_str.c.obj: ../USMART/usmart_str.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/newfolder.elf.dir/USMART/usmart_str.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/newfolder.elf.dir/USMART/usmart_str.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\newfolder.elf.dir\USMART\usmart_str.c.obj   -c D:\Desktop\newfolder\USMART\usmart_str.c
 
 CMakeFiles/newfolder.elf.dir/USMART/usmart_str.c.i: cmake_force
@@ -572,7 +585,7 @@ CMakeFiles/newfolder.elf.dir/USMART/usmart_str.c.s: cmake_force
 
 CMakeFiles/newfolder.elf.dir/startup/startup_stm32f103xe.s.obj: CMakeFiles/newfolder.elf.dir/flags.make
 CMakeFiles/newfolder.elf.dir/startup/startup_stm32f103xe.s.obj: ../startup/startup_stm32f103xe.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building ASM object CMakeFiles/newfolder.elf.dir/startup/startup_stm32f103xe.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building ASM object CMakeFiles/newfolder.elf.dir/startup/startup_stm32f103xe.s.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\newfolder.elf.dir\startup\startup_stm32f103xe.s.obj -c D:\Desktop\newfolder\startup\startup_stm32f103xe.s
 
 # Object files for target newfolder.elf
@@ -603,6 +616,7 @@ newfolder_elf_OBJECTS = \
 "CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.c.obj" \
 "CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj" \
 "CMakeFiles/newfolder.elf.dir/Hardware/I2C1.c.obj" \
+"CMakeFiles/newfolder.elf.dir/Hardware/ICM20948.c.obj" \
 "CMakeFiles/newfolder.elf.dir/Hardware/Key.c.obj" \
 "CMakeFiles/newfolder.elf.dir/Hardware/Led.c.obj" \
 "CMakeFiles/newfolder.elf.dir/Hardware/Timer2.c.obj" \
@@ -646,6 +660,7 @@ newfolder.elf: CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm
 newfolder.elf: CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.c.obj
 newfolder.elf: CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj
 newfolder.elf: CMakeFiles/newfolder.elf.dir/Hardware/I2C1.c.obj
+newfolder.elf: CMakeFiles/newfolder.elf.dir/Hardware/ICM20948.c.obj
 newfolder.elf: CMakeFiles/newfolder.elf.dir/Hardware/Key.c.obj
 newfolder.elf: CMakeFiles/newfolder.elf.dir/Hardware/Led.c.obj
 newfolder.elf: CMakeFiles/newfolder.elf.dir/Hardware/Timer2.c.obj
@@ -661,7 +676,7 @@ newfolder.elf: CMakeFiles/newfolder.elf.dir/USMART/usmart_str.c.obj
 newfolder.elf: CMakeFiles/newfolder.elf.dir/startup/startup_stm32f103xe.s.obj
 newfolder.elf: CMakeFiles/newfolder.elf.dir/build.make
 newfolder.elf: CMakeFiles/newfolder.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Linking C executable newfolder.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Desktop\newfolder\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Linking C executable newfolder.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\newfolder.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/Desktop/newfolder/cmake-build-debug/newfolder.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/Desktop/newfolder/cmake-build-debug/newfolder.bin"

@@ -332,6 +332,12 @@
 		<Unit filename="D:/Desktop/newfolder/Hardware/I2C1.h">
 			<Option target="newfolder.elf"/>
 		</Unit>
+		<Unit filename="D:/Desktop/newfolder/Hardware/ICM20948.c">
+			<Option target="newfolder.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/newfolder/Hardware/ICM20948.h">
+			<Option target="newfolder.elf"/>
+		</Unit>
 		<Unit filename="D:/Desktop/newfolder/Hardware/Key.c">
 			<Option target="newfolder.elf"/>
 		</Unit>

@@ -25,6 +25,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.c.obj"
   "CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj"
   "CMakeFiles/newfolder.elf.dir/Hardware/I2C1.c.obj"
+  "CMakeFiles/newfolder.elf.dir/Hardware/ICM20948.c.obj"
   "CMakeFiles/newfolder.elf.dir/Hardware/Key.c.obj"
   "CMakeFiles/newfolder.elf.dir/Hardware/Led.c.obj"
   "CMakeFiles/newfolder.elf.dir/Hardware/Timer2.c.obj"

@@ -12,20 +12,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4799f57d-90d4-42e1-a72a-5529b03787ec" name="Default Changelist" comment="change hard iic to soft iic&#10;realize mpu6050.c&#10;realize kalman filter">
-      <change afterPath="$PROJECT_DIR$/Hardware/mpu9250.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hardware/mpu9250.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="4799f57d-90d4-42e1-a72a-5529b03787ec" name="Default Changelist" comment="init mpu9250">
+      <change afterPath="$PROJECT_DIR$/Hardware/ICM20948.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hardware/ICM20948.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/I2C1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/I2C1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/I2C1.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/I2C1.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hardware/mpu6050.c" beforeDir="false" afterPath="$PROJECT_DIR$/Hardware/mpu6050.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Core/Src/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Core/Src/stm32f1xx_it.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/newfolder.elf.dir/cmake_clean.cmake" afterDir="false" />
@@ -81,7 +76,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="mpu9250" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -119,6 +114,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager" selected="OpenOCD Download &amp; Run.OCD newfolder">
@@ -130,6 +126,11 @@
     <configuration name="newfolder.elf" type="CMakeRunConfiguration" factoryName="Application" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="newfolder" TARGET_NAME="newfolder.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="newfolder" RUN_TARGET_NAME="newfolder.elf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
@@ -176,7 +177,7 @@
       <workItem from="1619450505429" duration="1399000" />
       <workItem from="1620092685322" duration="7201000" />
       <workItem from="1620115766252" duration="27124000" />
-      <workItem from="1620300187105" duration="608000" />
+      <workItem from="1620300187105" duration="3782000" />
     </task>
     <task id="LOCAL-00001" summary="include uart1 key led">
       <created>1613878259000</created>
@@ -283,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620126933747</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="init mpu9250">
+      <created>1620301690200</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1620301690200</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +361,8 @@
     <MESSAGE value="create kinds of usmart doc" />
     <MESSAGE value="add MPU6050 initialize" />
     <MESSAGE value="change hard iic to soft iic&#10;realize mpu6050.c&#10;realize kalman filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="change hard iic to soft iic&#10;realize mpu6050.c&#10;realize kalman filter" />
+    <MESSAGE value="init mpu9250" />
+    <option name="LAST_COMMIT_MESSAGE" value="init mpu9250" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

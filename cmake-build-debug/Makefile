@@ -844,6 +844,33 @@ Hardware/I2C1.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/I2C1.c.s
 .PHONY : Hardware/I2C1.c.s
 
+Hardware/ICM20948.obj: Hardware/ICM20948.c.obj
+
+.PHONY : Hardware/ICM20948.obj
+
+# target to build an object file
+Hardware/ICM20948.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/ICM20948.c.obj
+.PHONY : Hardware/ICM20948.c.obj
+
+Hardware/ICM20948.i: Hardware/ICM20948.c.i
+
+.PHONY : Hardware/ICM20948.i
+
+# target to preprocess a source file
+Hardware/ICM20948.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/ICM20948.c.i
+.PHONY : Hardware/ICM20948.c.i
+
+Hardware/ICM20948.s: Hardware/ICM20948.c.s
+
+.PHONY : Hardware/ICM20948.s
+
+# target to generate assembly for a file
+Hardware/ICM20948.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\newfolder.elf.dir\build.make CMakeFiles/newfolder.elf.dir/Hardware/ICM20948.c.s
+.PHONY : Hardware/ICM20948.c.s
+
 Hardware/Key.obj: Hardware/Key.c.obj
 
 .PHONY : Hardware/Key.obj
@@ -1264,6 +1291,9 @@ help:
 	@echo ... Hardware/I2C1.obj
 	@echo ... Hardware/I2C1.i
 	@echo ... Hardware/I2C1.s
+	@echo ... Hardware/ICM20948.obj
+	@echo ... Hardware/ICM20948.i
+	@echo ... Hardware/ICM20948.s
 	@echo ... Hardware/Key.obj
 	@echo ... Hardware/Key.i
 	@echo ... Hardware/Key.s

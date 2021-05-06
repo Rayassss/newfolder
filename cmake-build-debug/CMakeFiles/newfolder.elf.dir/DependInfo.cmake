@@ -52,6 +52,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "D:/Desktop/newfolder/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_wwdg.c.obj"
   "D:/Desktop/newfolder/Hardware/Exti.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/Exti.c.obj"
   "D:/Desktop/newfolder/Hardware/I2C1.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/I2C1.c.obj"
+  "D:/Desktop/newfolder/Hardware/ICM20948.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/ICM20948.c.obj"
   "D:/Desktop/newfolder/Hardware/Key.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/Key.c.obj"
   "D:/Desktop/newfolder/Hardware/Led.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/Led.c.obj"
   "D:/Desktop/newfolder/Hardware/Timer2.c" "D:/Desktop/newfolder/cmake-build-debug/CMakeFiles/newfolder.elf.dir/Hardware/Timer2.c.obj"

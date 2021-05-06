@@ -41,6 +41,7 @@ extern "C" {
 #include "uart.h"
 #include "adc1.h"
 #include "I2C1.h"
+#include "ICM20948.h"
 typedef int32_t s32;
 typedef int16_t s16;
 typedef int8_t s8;

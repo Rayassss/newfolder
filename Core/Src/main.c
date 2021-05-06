@@ -14,7 +14,7 @@ int main(void) {
     i2c_GPIO_Config();
     //   invmsMPU9250Init();
     while (1) {
-        if (invmsMPU9250Check()) {
+        if (invmsICM20948Check()) {
             HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
             HAL_Delay(100);
         }
